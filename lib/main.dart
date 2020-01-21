@@ -11,10 +11,10 @@ class MyApp extends StatelessWidget {
         appBar: AppBar(
           title: Text('Material App Bar'),
         ),
-        body: Center(
-          child: Container(
-            child: Text('Hello World'),
-          ),
+        body: Column(
+          children: <Widget>[
+            Text('Hello World'),
+          ],
         ),
       ),
     );
