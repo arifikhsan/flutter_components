@@ -1,10 +1,6 @@
 import 'package:flutter/material.dart';
 
 class Home extends StatelessWidget {
-  const Home({
-    Key key,
-  }) : super(key: key);
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -44,6 +40,16 @@ class Home extends StatelessWidget {
                 ),
                 onPressed: () {
                   Navigator.pushNamed(context, '/icon');
+                },
+              ),
+              RaisedButton(
+                color: Colors.blue,
+                child: Text(
+                  'IconButton',
+                  style: TextStyle(color: Colors.white),
+                ),
+                onPressed: () {
+                  Navigator.pushNamed(context, '/icon_button');
                 },
               ),
             ],

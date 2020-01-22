@@ -1,17 +1,13 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_components/button.dart';
-import 'package:flutter_components/hello_world.dart';
 import 'package:flutter_components/home.dart';
-import 'package:flutter_components/icon.dart';
+import 'package:flutter_components/pages/button_page.dart';
+import 'package:flutter_components/pages/hello_world_page.dart';
+import 'package:flutter_components/pages/icon_button_page.dart';
+import 'package:flutter_components/pages/icon_page.dart';
 
 void main() => runApp(MyApp());
 
-class MyApp extends StatefulWidget {
-  @override
-  _MyAppState createState() => _MyAppState();
-}
-
-class _MyAppState extends State<MyApp> {
+class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -19,9 +15,10 @@ class _MyAppState extends State<MyApp> {
       initialRoute: '/',
       routes: {
         '/': (context) => Home(),
-        '/hello_world': (context) => HelloWorld(),
-        '/button': (context) => Button(),
-        '/icon': (context) => IconPage()
+        '/hello_world': (context) => HelloWorldPage(),
+        '/button': (context) => ButtonPage(),
+        '/icon': (context) => IconPage(),
+        '/icon_button': (context) => IconButtonPage(),
       },
     );
   }
