@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_components/button.dart';
 import 'package:flutter_components/hello_world.dart';
 import 'package:flutter_components/home.dart';
+import 'package:flutter_components/icon.dart';
 
 void main() => runApp(MyApp());
 
@@ -19,7 +20,8 @@ class _MyAppState extends State<MyApp> {
       routes: {
         '/': (context) => Home(),
         '/hello_world': (context) => HelloWorld(),
-        '/button': (context) => Button()
+        '/button': (context) => Button(),
+        '/icon': (context) => IconPage()
       },
     );
   }

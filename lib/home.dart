@@ -8,11 +8,6 @@ class Home extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final List<Component> components = <Component>[
-      Component(name: 'Hello World', slug: 'hello_world'),
-      Component(name: 'Text', slug: 'text'),
-    ];
-
     return Scaffold(
       appBar: AppBar(
         title: Text('Material App Bar'),
@@ -22,16 +17,34 @@ class Home extends StatelessWidget {
           child: Column(
             children: <Widget>[
               RaisedButton(
-                child: Text('Hello World'),
+                color: Colors.blue,
+                child: Text(
+                  'Hello World',
+                  style: TextStyle(color: Colors.white),
+                ),
                 onPressed: () {
                   Navigator.pushNamed(context, '/hello_world');
-                }
+                },
               ),
               RaisedButton(
-                child: Text('Buttons'),
+                color: Colors.blue,
+                child: Text(
+                  'Buttons',
+                  style: TextStyle(color: Colors.white),
+                ),
                 onPressed: () {
                   Navigator.pushNamed(context, '/button');
-                }
+                },
+              ),
+              RaisedButton(
+                color: Colors.blue,
+                child: Text(
+                  'Icon',
+                  style: TextStyle(color: Colors.white),
+                ),
+                onPressed: () {
+                  Navigator.pushNamed(context, '/icon');
+                },
               ),
             ],
           ),
