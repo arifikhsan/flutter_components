@@ -9,6 +9,7 @@ class HomePage extends StatelessWidget {
         centerTitle: true,
       ),
       body: Container(
+        margin: EdgeInsets.only(top: 8),
         child: Center(
           child: Column(
             children: <Widget>[
@@ -52,6 +53,16 @@ class HomePage extends StatelessWidget {
                   Navigator.pushNamed(context, '/icon_button');
                 },
               ),
+              RaisedButton(
+                color: Colors.blue,
+                child: Text(
+                  'Simple Text',
+                  style: TextStyle(color: Colors.white),
+                ),
+                onPressed: () {
+                  Navigator.pushNamed(context, '/text');
+                }
+              )
             ],
           ),
         ),
