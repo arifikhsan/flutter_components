@@ -1,83 +1,78 @@
 import 'package:flutter/material.dart';
 
-void main() => runApp(Button());
-
 class Button extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      title: 'Material App',
-      home: Scaffold(
-        appBar: AppBar(
-          title: Text('Material App Bar'),
-        ),
-        body: Center(
-          child: Container(
-            child: Column(
-              mainAxisAlignment: MainAxisAlignment.center,
-              children: <Widget>[
-                Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                  children: <Widget>[
-                    RaisedButton(
-                      color: Colors.blue,
-                      child: Text(
-                        'RaisedButton',
-                        style: TextStyle(color: Colors.white),
-                      ),
-                      onPressed: () {},
+    return Scaffold(
+      appBar: AppBar(
+        title: Text('Buttons'),
+      ),
+      body: Center(
+        child: Container(
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: <Widget>[
+              Row(
+                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                children: <Widget>[
+                  RaisedButton(
+                    color: Colors.blue,
+                    child: Text(
+                      'RaisedButton',
+                      style: TextStyle(color: Colors.white),
                     ),
-                    RaisedButton(
-                      color: Colors.blue,
-                      child: Text(
-                        'DisabledRaisedButton',
-                        style: TextStyle(color: Colors.white),
-                      ),
-                      onPressed: null,
+                    onPressed: () {},
+                  ),
+                  RaisedButton(
+                    color: Colors.blue,
+                    child: Text(
+                      'DisabledRaisedButton',
+                      style: TextStyle(color: Colors.white),
                     ),
-                  ],
-                ),
-                Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                  children: <Widget>[
-                    FlatButton(
-                      color: Colors.blue,
-                      child: Text(
-                        'FlatButton',
-                        style: TextStyle(color: Colors.white),
-                      ),
-                      onPressed: () {},
+                    onPressed: null,
+                  ),
+                ],
+              ),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                children: <Widget>[
+                  FlatButton(
+                    color: Colors.blue,
+                    child: Text(
+                      'FlatButton',
+                      style: TextStyle(color: Colors.white),
                     ),
-                    FlatButton(
-                      color: Colors.blue,
-                      child: Text(
-                        'DisabledFlatButton',
-                      ),
-                      onPressed: null,
+                    onPressed: () {},
+                  ),
+                  FlatButton(
+                    color: Colors.blue,
+                    child: Text(
+                      'DisabledFlatButton',
                     ),
-                  ],
-                ),
-                Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                  children: <Widget>[
-                    OutlineButton(
-                      child: Text(
-                        'FlatButton',
-                        style: TextStyle(color: Colors.blue),
-                      ),
-                      onPressed: () {},
+                    onPressed: null,
+                  ),
+                ],
+              ),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                children: <Widget>[
+                  OutlineButton(
+                    child: Text(
+                      'FlatButton',
+                      style: TextStyle(color: Colors.blue),
                     ),
-                    FlatButton(
-                      color: Colors.blue,
-                      child: Text(
-                        'DisabledFlatButton',
-                      ),
-                      onPressed: null,
+                    onPressed: () {},
+                  ),
+                  FlatButton(
+                    color: Colors.blue,
+                    child: Text(
+                      'DisabledFlatButton',
                     ),
-                  ],
-                ),
-              ],
-            ),
+                    onPressed: null,
+                  ),
+                ],
+              ),
+            ],
           ),
         ),
       ),

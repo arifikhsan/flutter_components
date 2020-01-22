@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_components/component.dart';
 
 class Home extends StatelessWidget {
   const Home({
@@ -10,7 +9,8 @@ class Home extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Material App Bar'),
+        title: Text('Flutter Components'),
+        centerTitle: true,
       ),
       body: Container(
         child: Center(

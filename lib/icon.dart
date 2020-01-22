@@ -1,17 +1,14 @@
 import 'package:flutter/material.dart';
 
-void main() => runApp(IconPage());
-
 class IconPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      title: 'Material App',
-      home: Scaffold(
-        appBar: AppBar(
-          title: Text('Material App Bar'),
-        ),
-        body: Center(
+    return Scaffold(
+      appBar: AppBar(
+        title: Text('Icons'),
+      ),
+      body: Container(
+        child: Center(
           child: Column(
             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             children: <Widget>[
