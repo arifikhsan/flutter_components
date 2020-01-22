@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_components/home.dart';
 import 'package:flutter_components/pages/button_page.dart';
 import 'package:flutter_components/pages/hello_world_page.dart';
+import 'package:flutter_components/pages/home_page.dart';
 import 'package:flutter_components/pages/icon_button_page.dart';
 import 'package:flutter_components/pages/icon_page.dart';
 
@@ -14,7 +14,7 @@ class App extends StatelessWidget {
       color: Colors.red,
       initialRoute: '/',
       routes: {
-        '/': (context) => Home(),
+        '/': (context) => HomePage(),
         '/hello_world': (context) => HelloWorldPage(),
         '/button': (context) => ButtonPage(),
         '/icon': (context) => IconPage(),
