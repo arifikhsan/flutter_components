@@ -54,14 +54,23 @@ class HomePage extends StatelessWidget {
                 },
               ),
               RaisedButton(
+                  color: Colors.blue,
+                  child: Text(
+                    'Simple Text',
+                    style: TextStyle(color: Colors.white),
+                  ),
+                  onPressed: () {
+                    Navigator.pushNamed(context, '/text');
+                  }),
+              RaisedButton(
                 color: Colors.blue,
                 child: Text(
-                  'Simple Text',
+                  'Card',
                   style: TextStyle(color: Colors.white),
                 ),
                 onPressed: () {
-                  Navigator.pushNamed(context, '/text');
-                }
+                  Navigator.pushNamed(context, '/card');
+                },
               )
             ],
           ),

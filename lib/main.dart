@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_components/pages/button_page.dart';
+import 'package:flutter_components/pages/card_page.dart';
 import 'package:flutter_components/pages/hello_world_page.dart';
 import 'package:flutter_components/pages/home_page.dart';
 import 'package:flutter_components/pages/icon_button_page.dart';
@@ -21,6 +22,7 @@ class App extends StatelessWidget {
         '/icon': (context) => IconPage(),
         '/icon_button': (context) => IconButtonPage(),
         '/text': (context) => TextPage(),
+        '/card': (context) => CardPage(),
       },
     );
   }
