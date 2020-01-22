@@ -7,7 +7,7 @@ class HelloWorldPage extends StatelessWidget {
       title: 'Material App',
       home: Scaffold(
         appBar: AppBar(
-          title: Text('Material App Bar'),
+          title: Text('Hello World'),
         ),
         body: Center(
           child: Container(

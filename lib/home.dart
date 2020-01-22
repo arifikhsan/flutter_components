@@ -52,6 +52,7 @@ class Home extends StatelessWidget {
                   Navigator.pushNamed(context, '/icon_button');
                 },
               ),
+              Text('data')
             ],
           ),
         ),

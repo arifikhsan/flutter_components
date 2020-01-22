@@ -5,13 +5,13 @@ import 'package:flutter_components/pages/hello_world_page.dart';
 import 'package:flutter_components/pages/icon_button_page.dart';
 import 'package:flutter_components/pages/icon_page.dart';
 
-void main() => runApp(MyApp());
+void main() => runApp(App());
 
-class MyApp extends StatelessWidget {
+class App extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Material App',
+      color: Colors.red,
       initialRoute: '/',
       routes: {
         '/': (context) => Home(),
