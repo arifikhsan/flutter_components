@@ -17,22 +17,25 @@ class Home extends StatelessWidget {
       appBar: AppBar(
         title: Text('Material App Bar'),
       ),
-      body: ListView.builder(
-        itemCount: components.length,
-        itemBuilder: (BuildContext context, int index) {
-          return Container(
-            color: Colors.blue,
-            child: ListTile(
-              title: Text(
-                'components[index].title',
-                style: TextStyle(color: Colors.white),
+      body: Container(
+        child: Center(
+          child: Column(
+            children: <Widget>[
+              RaisedButton(
+                child: Text('Hello World'),
+                onPressed: () {
+                  Navigator.pushNamed(context, '/hello_world');
+                }
               ),
-              onTap: () {
-                Navigator.pushNamed(context, '/hello_world');
-              },
-            ),
-          );
-        },
+              RaisedButton(
+                child: Text('Buttons'),
+                onPressed: () {
+                  Navigator.pushNamed(context, '/button');
+                }
+              ),
+            ],
+          ),
+        ),
       ),
     );
   }
