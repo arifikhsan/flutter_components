@@ -4,13 +4,15 @@ import 'package:flutter_components/component.dart';
 class Home extends StatelessWidget {
   const Home({
     Key key,
-    @required this.components,
   }) : super(key: key);
-
-  final List<Component> components;
 
   @override
   Widget build(BuildContext context) {
+    final List<Component> components = <Component>[
+      Component(name: 'Hello World', slug: 'hello_world'),
+      Component(name: 'Text', slug: 'text'),
+    ];
+
     return Scaffold(
       appBar: AppBar(
         title: Text('Material App Bar'),

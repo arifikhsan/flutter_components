@@ -11,18 +11,13 @@ class MyApp extends StatefulWidget {
 }
 
 class _MyAppState extends State<MyApp> {
-  final List<Component> components = <Component>[
-    Component(name: 'Hello World', slug: 'hello_world'),
-    Component(name: 'Text', slug: 'text'),
-  ];
-
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Material App',
       initialRoute: '/',
       routes: {
-        '/': (context) => Home(components: components),
+        '/': (context) => Home(),
         '/hello_world': (context) => HelloWorld(),
       },
     );
