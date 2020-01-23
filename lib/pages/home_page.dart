@@ -46,7 +46,7 @@ class HomePage extends StatelessWidget {
               RaisedButton(
                 color: Colors.blue,
                 child: Text(
-                  'IconButton',
+                  'Icon Button',
                   style: TextStyle(color: Colors.white),
                 ),
                 onPressed: () {
@@ -70,6 +70,16 @@ class HomePage extends StatelessWidget {
                 ),
                 onPressed: () {
                   Navigator.pushNamed(context, '/card');
+                },
+              ),
+              RaisedButton(
+                color: Colors.blue,
+                child: Text(
+                  'Dropdown Button',
+                  style: TextStyle(color: Colors.white),
+                ),
+                onPressed: () {
+                  Navigator.pushNamed(context, '/dropdown_button');
                 },
               )
             ],
