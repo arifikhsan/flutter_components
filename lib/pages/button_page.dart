@@ -1,6 +1,11 @@
 import 'package:flutter/material.dart';
+import 'package:fluttertoast/fluttertoast.dart';
 
 class ButtonPage extends StatelessWidget {
+  _showToast() {
+    Fluttertoast.showToast(msg: 'Hello there');
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -21,7 +26,7 @@ class ButtonPage extends StatelessWidget {
                       'RaisedButton',
                       style: TextStyle(color: Colors.white),
                     ),
-                    onPressed: () {},
+                    onPressed: _showToast,
                   ),
                   RaisedButton(
                     color: Colors.blue,
@@ -29,7 +34,7 @@ class ButtonPage extends StatelessWidget {
                       'DisabledRaisedButton',
                       style: TextStyle(color: Colors.white),
                     ),
-                    onPressed: null,
+                    onPressed: _showToast,
                   ),
                 ],
               ),
@@ -42,14 +47,14 @@ class ButtonPage extends StatelessWidget {
                       'FlatButton',
                       style: TextStyle(color: Colors.white),
                     ),
-                    onPressed: () {},
+                    onPressed: _showToast,
                   ),
                   FlatButton(
                     color: Colors.blue,
                     child: Text(
                       'DisabledFlatButton',
                     ),
-                    onPressed: null,
+                    onPressed: _showToast,
                   ),
                 ],
               ),
@@ -61,14 +66,14 @@ class ButtonPage extends StatelessWidget {
                       'FlatButton',
                       style: TextStyle(color: Colors.blue),
                     ),
-                    onPressed: () {},
+                    onPressed: _showToast,
                   ),
                   FlatButton(
                     color: Colors.blue,
                     child: Text(
                       'DisabledFlatButton',
                     ),
-                    onPressed: null,
+                    onPressed: _showToast,
                   ),
                 ],
               ),
