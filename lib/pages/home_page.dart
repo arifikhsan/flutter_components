@@ -81,6 +81,16 @@ class HomePage extends StatelessWidget {
                 onPressed: () {
                   Navigator.pushNamed(context, '/dropdown_button');
                 },
+              ),
+              RaisedButton(
+                color: Colors.blue,
+                child: Text(
+                  'Text field',
+                  style: TextStyle(color: Colors.white),
+                ),
+                onPressed: () {
+                  Navigator.pushNamed(context, '/text_field');
+                },
               )
             ],
           ),
