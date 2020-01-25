@@ -91,6 +91,16 @@ class HomePage extends StatelessWidget {
                 onPressed: () {
                   Navigator.pushNamed(context, '/text_field');
                 },
+              ),
+              RaisedButton(
+                color: Colors.blue,
+                child: Text(
+                  'Stateful Widgets Page',
+                  style: TextStyle(color: Colors.white),
+                ),
+                onPressed: () {
+                  Navigator.pushNamed(context, '/stateful_widgets');
+                },
               )
             ],
           ),
