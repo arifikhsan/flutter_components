@@ -8,6 +8,9 @@ class TextFieldPage extends StatefulWidget {
 
 class _TextFieldPageState extends State<TextFieldPage> {
   bool numberInputIsValid = true;
+  bool inputShowPassword = false;
+
+  final multilineInputController = TextEditingController();
 
   @override
   Widget build(BuildContext context) {
@@ -15,47 +18,82 @@ class _TextFieldPageState extends State<TextFieldPage> {
       appBar: AppBar(
         title: Text('Text field'),
       ),
-      body: ListView(
-        children: <Widget>[
-          ListTile(
-            title: Text('Number'),
-            subtitle: Text('input field'),
-          ),
-          TextField(
-            keyboardType: TextInputType.number,
-            decoration: InputDecoration(
-              labelText: 'Enter an integer: ',
-              icon: Icon(Icons.attach_money),
-              border: OutlineInputBorder(
-                borderRadius: BorderRadius.all(Radius.circular(8)),
+      body: Container(
+        margin: const EdgeInsets.all(8.0),
+        child: ListView(
+          children: <Widget>[
+            Text('Number input field'),
+            TextField(
+              keyboardType: TextInputType.number,
+              decoration: InputDecoration(
+                labelText: 'Enter an integer: ',
+                icon: Icon(Icons.attach_money),
+                border: OutlineInputBorder(
+                  borderRadius: BorderRadius.all(Radius.circular(8)),
+                ),
+                errorText:
+                    numberInputIsValid ? null : 'Please enter an integer',
               ),
-              errorText: numberInputIsValid ? null : 'Please enter an integer',
+              onSubmitted: (String value) {
+                Fluttertoast.showToast(msg: 'You entered: $value');
+              },
+              onChanged: (String value) {
+                final valueInteger = int.tryParse(value);
+                debugPrint('parsed value: $valueInteger');
+                setState(() {
+                  if (valueInteger == null) {
+                    numberInputIsValid = false;
+                  } else {
+                    numberInputIsValid = true;
+                  }
+                });
+              },
             ),
-            onSubmitted: (String value) {
-              Fluttertoast.showToast(msg: 'You entered: $value');
-            },
-            onChanged: (String value) {
-              final valueInteger = int.tryParse(value);
-              debugPrint('parsed value: $valueInteger');
-              setState(() {
-                if (valueInteger == null) {
-                  numberInputIsValid = false;
-                } else {
-                  numberInputIsValid = true;
-                }
-              });
-            },
-          ),
-          ListTile(
-            title: Text('Number'),
-            subtitle: Text('input field'),
-          ),
-          ListTile(
-            title: Text('Number'),
-            subtitle: Text('input field'),
-          ),
-        ],
+            Text('Multiline Input Field'),
+            TextField(
+              controller: multilineInputController,
+              maxLines: 10,
+              textCapitalization: TextCapitalization.sentences,
+              decoration: InputDecoration(
+                  counterText:
+                      '${this.multilineInputController.text.split(' ').length}',
+                  labelText: 'Enter multiline text',
+                  hintText: 'type something ...',
+                  border: OutlineInputBorder()),
+              onChanged: (_) {
+                setState(() {});
+              },
+            ),
+            Text('Password input field'),
+            TextField(
+              obscureText: inputShowPassword,
+              decoration: InputDecoration(
+                prefixIcon: Icon(Icons.security),
+                suffixIcon: IconButton(
+                  icon: Icon(
+                    Icons.remove_red_eye,
+                    color: inputShowPassword ? buildGrey() : Colors.blue,
+                  ),
+                  onPressed: () {
+                    setState(() {
+                      inputShowPassword = !inputShowPassword;
+                    });
+                  },
+                ),
+              ),
+            ),
+            Text('Borderless input'),
+            TextField(
+              maxLines: 3,
+              decoration: InputDecoration.collapsed(
+                hintText: 'borderless input',
+              ),
+            )
+          ],
+        ),
       ),
     );
   }
+
+  MaterialColor buildGrey() => Colors.grey;
 }
