@@ -95,7 +95,7 @@ class HomePage extends StatelessWidget {
               RaisedButton(
                 color: Colors.blue,
                 child: Text(
-                  'Stateful Widgets Page',
+                  'Stateful Widgets',
                   style: TextStyle(color: Colors.white),
                 ),
                 onPressed: () {
