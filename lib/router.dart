@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_components/pages/button_page.dart';
 import 'package:flutter_components/pages/card_page.dart';
 import 'package:flutter_components/pages/dropdown_button_page.dart';
+import 'package:flutter_components/pages/form_page.dart';
 import 'package:flutter_components/pages/hello_world_page.dart';
 import 'package:flutter_components/pages/home_page.dart';
 import 'package:flutter_components/pages/icon_button_page.dart';
@@ -21,4 +22,5 @@ final routes = <String, WidgetBuilder>{
   '/dropdown_button': (context) => DropdownButtonPage(),
   '/text_field': (context) => TextFieldPage(),
   '/stateful_widgets': (context) => StatefulWidgetsPage(),
+  '/form': (context) => FormPage(),
 };

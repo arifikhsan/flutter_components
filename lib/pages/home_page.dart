@@ -11,7 +11,7 @@ class HomePage extends StatelessWidget {
       body: Container(
         margin: EdgeInsets.only(top: 8),
         child: Center(
-          child: Column(
+          child: ListView(
             children: <Widget>[
               RaisedButton(
                 color: Colors.blue,
@@ -100,6 +100,16 @@ class HomePage extends StatelessWidget {
                 ),
                 onPressed: () {
                   Navigator.pushNamed(context, '/stateful_widgets');
+                },
+              ),
+              RaisedButton(
+                color: Colors.blue,
+                child: Text(
+                  'Form',
+                  style: TextStyle(color: Colors.white),
+                ),
+                onPressed: () {
+                  Navigator.pushNamed(context, '/form');
                 },
               )
             ],
