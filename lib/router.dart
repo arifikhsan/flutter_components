@@ -7,6 +7,7 @@ import 'package:flutter_components/pages/hello_world_page.dart';
 import 'package:flutter_components/pages/home_page.dart';
 import 'package:flutter_components/pages/icon_button_page.dart';
 import 'package:flutter_components/pages/icon_page.dart';
+import 'package:flutter_components/pages/list_view_builder_page.dart';
 import 'package:flutter_components/pages/stateful_widgets_page.dart';
 import 'package:flutter_components/pages/text_field_page.dart';
 import 'package:flutter_components/pages/text_page.dart';
@@ -23,4 +24,5 @@ final routes = <String, WidgetBuilder>{
   '/text_field': (context) => TextFieldPage(),
   '/stateful_widgets': (context) => StatefulWidgetsPage(),
   '/form': (context) => FormPage(),
+  '/listview': (context) => ListViewBuilderPage(),
 };
