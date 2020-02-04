@@ -7,26 +7,28 @@ class PlaceholderPage extends StatelessWidget {
       appBar: AppBar(
         title: Text('Placeholder'),
       ),
-      body: Column(
-        mainAxisAlignment: MainAxisAlignment.center,
-        crossAxisAlignment: CrossAxisAlignment.center,
-        children: <Widget>[
-          Container(
-            height: 100,
-            width: 150,
-            child: Placeholder(
-              color: Colors.red,
-              strokeWidth: 1,
+      body: Center(
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.end ,
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: <Widget>[
+            Container(
+              height: 100,
+              width: 150,
+              child: Placeholder(
+                color: Colors.red,
+                strokeWidth: 1,
+              ),
             ),
-          ),
-          Container(
-            height: 100,
-            width: 100,
-            child: Placeholder(
-              color: Colors.green,
-            ),
-          )
-        ],
+            Container(
+              height: 100,
+              width: 100,
+              child: Placeholder(
+                color: Colors.green,
+              ),
+            )
+          ],
+        ),
       ),
     );
   }
