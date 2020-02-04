@@ -167,6 +167,17 @@ class HomePage extends StatelessWidget {
                   Navigator.pushNamed(context, '/wrap');
                 },
               ),
+              ListTile(
+                title: Text(
+                  'Chip',
+                  style: TextStyle(
+                    color: Colors.blue
+                  ),
+                ),
+                onTap: () {
+                  Navigator.pushNamed(context, '/chip');
+                },
+              ),
             ],
           ),
         ),

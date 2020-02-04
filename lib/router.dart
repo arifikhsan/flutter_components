@@ -12,6 +12,7 @@ import 'package:flutter_components/pages/stateful_widgets_page.dart';
 import 'package:flutter_components/pages/text_field_page.dart';
 import 'package:flutter_components/pages/text_page.dart';
 import 'package:flutter_components/pages/widgets/align_page.dart';
+import 'package:flutter_components/pages/widgets/chip_page.dart';
 import 'package:flutter_components/pages/widgets/container_page.dart';
 import 'package:flutter_components/pages/widgets/placeholder_page.dart';
 import 'package:flutter_components/pages/widgets/spacer_page.dart';
@@ -34,5 +35,6 @@ final routes = <String, WidgetBuilder>{
   '/spacer': (context) => SpacerPage(),
   '/container': (context) => ContainerPage(),
   '/wrap': (context) => WrapPage(),
+  '/chip': (context) => ChipPage(),
   '/listview': (context) => ListViewBuilderPage(),
 };
