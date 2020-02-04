@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_components/pages/widgets/button_page.dart';
 import 'package:flutter_components/pages/widgets/card_page.dart';
 import 'package:flutter_components/pages/widgets/dropdown_button_page.dart';
+import 'package:flutter_components/pages/widgets/floating_action_button.dart';
 import 'package:flutter_components/pages/widgets/form_page.dart';
 import 'package:flutter_components/pages/widgets/hello_world_page.dart';
 import 'package:flutter_components/pages/widgets/home_page.dart';
@@ -19,6 +20,7 @@ import 'package:flutter_components/pages/widgets/page_view_horizontal_page.dart'
 import 'package:flutter_components/pages/widgets/page_view_vertical_page.dart';
 import 'package:flutter_components/pages/widgets/placeholder_page.dart';
 import 'package:flutter_components/pages/widgets/spacer_page.dart';
+import 'package:flutter_components/pages/widgets/tooltip_page.dart';
 import 'package:flutter_components/pages/widgets/unsafe_area_page.dart';
 import 'package:flutter_components/pages/widgets/wrap_page.dart';
 
@@ -44,6 +46,8 @@ final routes = <String, WidgetBuilder>{
   '/page_view_vertical': (context) => PageViewVerticalPage(),
   '/unsafe_area': (context) => UnsafeAreaPage(),
   '/safe_area': (context) => SafeAreaPage(),
+  '/floating_action_button': (context) => FloatingActionButtonPage(),
+  '/tooltip': (context) => TooltipPage(),
 
    // * List
   '/listview': (context) => ListViewBuilderPage(),

@@ -15,6 +15,24 @@ class HomePage extends StatelessWidget {
             children: <Widget>[
               ListTile(
                 title: Text(
+                  'Tooltip',
+                  style: TextStyle(color: Colors.blue),
+                ),
+                onTap: () {
+                  Navigator.pushNamed(context, '/tooltip');
+                },
+              ),
+              ListTile(
+                title: Text(
+                  'Floating Action Button',
+                  style: TextStyle(color: Colors.blue),
+                ),
+                onTap: () {
+                  Navigator.pushNamed(context, '/floating_action_button');
+                },
+              ),
+              ListTile(
+                title: Text(
                   'Safe Area',
                   style: TextStyle(color: Colors.blue),
                 ),
