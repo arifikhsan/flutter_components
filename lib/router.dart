@@ -13,6 +13,7 @@ import 'package:flutter_components/pages/text_field_page.dart';
 import 'package:flutter_components/pages/text_page.dart';
 import 'package:flutter_components/pages/widgets/align_page.dart';
 import 'package:flutter_components/pages/widgets/placeholder_page.dart';
+import 'package:flutter_components/pages/widgets/spacer_page.dart';
 
 final routes = <String, WidgetBuilder>{
   '/': (context) => HomePage(),
@@ -28,5 +29,6 @@ final routes = <String, WidgetBuilder>{
   '/form': (context) => FormPage(),
   '/placeholder': (context) => PlaceholderPage(),
   '/align': (context) => AlignPage(),
+  '/spacer': (context) => SpacerPage(),
   '/listview': (context) => ListViewBuilderPage(),
 };
