@@ -11,6 +11,7 @@ import 'package:flutter_components/pages/list_view_builder_page.dart';
 import 'package:flutter_components/pages/stateful_widgets_page.dart';
 import 'package:flutter_components/pages/text_field_page.dart';
 import 'package:flutter_components/pages/text_page.dart';
+import 'package:flutter_components/pages/widgets/placeholder_page.dart';
 
 final routes = <String, WidgetBuilder>{
   '/': (context) => HomePage(),
@@ -24,5 +25,6 @@ final routes = <String, WidgetBuilder>{
   '/text_field': (context) => TextFieldPage(),
   '/stateful_widgets': (context) => StatefulWidgetsPage(),
   '/form': (context) => FormPage(),
+  '/placeholder': (context) => PlaceholderPage(),
   '/listview': (context) => ListViewBuilderPage(),
 };

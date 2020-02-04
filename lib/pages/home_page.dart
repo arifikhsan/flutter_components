@@ -112,7 +112,17 @@ class HomePage extends StatelessWidget {
                   Navigator.pushNamed(context, '/listview');
                 },
               ),
-              
+              ListTile(
+                title: Text(
+                  'Placeholder',
+                  style: TextStyle(
+                    color: Colors.blue
+                  ),
+                ),
+                onTap: () {
+                  Navigator.pushNamed(context, '/placeholder');
+                },
+              )
             ],
           ),
         ),
