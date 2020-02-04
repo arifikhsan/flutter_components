@@ -15,6 +15,7 @@ import 'package:flutter_components/pages/widgets/align_page.dart';
 import 'package:flutter_components/pages/widgets/container_page.dart';
 import 'package:flutter_components/pages/widgets/placeholder_page.dart';
 import 'package:flutter_components/pages/widgets/spacer_page.dart';
+import 'package:flutter_components/pages/widgets/wrap_page.dart';
 
 final routes = <String, WidgetBuilder>{
   '/': (context) => HomePage(),
@@ -32,5 +33,6 @@ final routes = <String, WidgetBuilder>{
   '/align': (context) => AlignPage(),
   '/spacer': (context) => SpacerPage(),
   '/container': (context) => ContainerPage(),
+  '/wrap': (context) => WrapPage(),
   '/listview': (context) => ListViewBuilderPage(),
 };
