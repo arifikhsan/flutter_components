@@ -178,6 +178,17 @@ class HomePage extends StatelessWidget {
                   Navigator.pushNamed(context, '/chip');
                 },
               ),
+              ListTile(
+                title: Text(
+                  'Page View Horizontal',
+                  style: TextStyle(
+                    color: Colors.blue
+                  ),
+                ),
+                onTap: () {
+                  Navigator.pushNamed(context, '/page_view_horizontal');
+                },
+              ),
             ],
           ),
         ),
