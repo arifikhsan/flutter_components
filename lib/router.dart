@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_components/pages/widgets/button_page.dart';
 import 'package:flutter_components/pages/widgets/card_page.dart';
 import 'package:flutter_components/pages/widgets/dropdown_button_page.dart';
+import 'package:flutter_components/pages/widgets/flexible_page.dart';
 import 'package:flutter_components/pages/widgets/floating_action_button.dart';
 import 'package:flutter_components/pages/widgets/form_page.dart';
 import 'package:flutter_components/pages/widgets/hello_world_page.dart';
@@ -48,6 +49,7 @@ final routes = <String, WidgetBuilder>{
   '/safe_area': (context) => SafeAreaPage(),
   '/floating_action_button': (context) => FloatingActionButtonPage(),
   '/tooltip': (context) => TooltipPage(),
+  '/flexible': (context) => FlexiblePage(),
 
    // * List
   '/listview': (context) => ListViewBuilderPage(),
