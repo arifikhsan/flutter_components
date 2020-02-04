@@ -189,6 +189,17 @@ class HomePage extends StatelessWidget {
                   Navigator.pushNamed(context, '/page_view_horizontal');
                 },
               ),
+              ListTile(
+                title: Text(
+                  'Page View Vertical',
+                  style: TextStyle(
+                    color: Colors.blue
+                  ),
+                ),
+                onTap: () {
+                  Navigator.pushNamed(context, '/page_view_vertical');
+                },
+              ),
             ],
           ),
         ),

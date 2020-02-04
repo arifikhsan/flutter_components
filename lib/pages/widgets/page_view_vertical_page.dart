@@ -1,15 +1,15 @@
 import 'package:flutter/material.dart';
 
-class PageViewHorizontalPage extends StatelessWidget {
+class PageViewVerticalPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Page View Horizontal'),
+        title: Text('Page View Vertical'),
       ),
       body: PageView(
         physics: BouncingScrollPhysics(),
-        scrollDirection: Axis.horizontal,
+        scrollDirection: Axis.vertical,
         children: <Widget>[
           Container(
             child: Card(
