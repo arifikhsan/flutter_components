@@ -11,6 +11,7 @@ import 'package:flutter_components/pages/widgets/icon_button_page.dart';
 import 'package:flutter_components/pages/widgets/icon_page.dart';
 import 'package:flutter_components/pages/lists/list_view_builder_page.dart';
 import 'package:flutter_components/pages/layouts/safe_area_page.dart';
+import 'package:flutter_components/pages/widgets/stack_page.dart';
 import 'package:flutter_components/pages/widgets/stateful_widgets_page.dart';
 import 'package:flutter_components/pages/widgets/text_field_page.dart';
 import 'package:flutter_components/pages/widgets/text_page.dart';
@@ -43,14 +44,17 @@ final routes = <String, WidgetBuilder>{
   '/container': (context) => ContainerPage(),
   '/wrap': (context) => WrapPage(),
   '/chip': (context) => ChipPage(),
+  '/floating_action_button': (context) => FloatingActionButtonPage(),
+  '/tooltip': (context) => TooltipPage(),
+  '/flexible': (context) => FlexiblePage(),
+  '/stack': (context) => StackPage(),
+
+  // * Layouts
   '/page_view_horizontal': (context) => PageViewHorizontalPage(),
   '/page_view_vertical': (context) => PageViewVerticalPage(),
   '/unsafe_area': (context) => UnsafeAreaPage(),
   '/safe_area': (context) => SafeAreaPage(),
-  '/floating_action_button': (context) => FloatingActionButtonPage(),
-  '/tooltip': (context) => TooltipPage(),
-  '/flexible': (context) => FlexiblePage(),
 
-   // * List
+   // * Lists
   '/listview': (context) => ListViewBuilderPage(),
 };
