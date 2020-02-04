@@ -12,6 +12,7 @@ import 'package:flutter_components/pages/stateful_widgets_page.dart';
 import 'package:flutter_components/pages/text_field_page.dart';
 import 'package:flutter_components/pages/text_page.dart';
 import 'package:flutter_components/pages/widgets/align_page.dart';
+import 'package:flutter_components/pages/widgets/container_page.dart';
 import 'package:flutter_components/pages/widgets/placeholder_page.dart';
 import 'package:flutter_components/pages/widgets/spacer_page.dart';
 
@@ -30,5 +31,6 @@ final routes = <String, WidgetBuilder>{
   '/placeholder': (context) => PlaceholderPage(),
   '/align': (context) => AlignPage(),
   '/spacer': (context) => SpacerPage(),
+  '/container': (context) => ContainerPage(),
   '/listview': (context) => ListViewBuilderPage(),
 };

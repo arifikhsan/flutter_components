@@ -145,6 +145,17 @@ class HomePage extends StatelessWidget {
                   Navigator.pushNamed(context, '/spacer');
                 },
               ),
+              ListTile(
+                title: Text(
+                  'Container',
+                  style: TextStyle(
+                    color: Colors.blue
+                  ),
+                ),
+                onTap: () {
+                  Navigator.pushNamed(context, '/container');
+                },
+              ),
             ],
           ),
         ),
