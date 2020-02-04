@@ -15,6 +15,15 @@ class HomePage extends StatelessWidget {
             children: <Widget>[
               ListTile(
                 title: Text(
+                  'Grid List',
+                  style: TextStyle(color: Colors.blue),
+                ),
+                onTap: () {
+                  Navigator.pushNamed(context, '/grid_list');
+                },
+              ),
+              ListTile(
+                title: Text(
                   'Stack',
                   style: TextStyle(color: Colors.blue),
                 ),
