@@ -1,16 +1,17 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_components/pages/button_page.dart';
-import 'package:flutter_components/pages/card_page.dart';
-import 'package:flutter_components/pages/dropdown_button_page.dart';
-import 'package:flutter_components/pages/form_page.dart';
-import 'package:flutter_components/pages/hello_world_page.dart';
-import 'package:flutter_components/pages/home_page.dart';
-import 'package:flutter_components/pages/icon_button_page.dart';
-import 'package:flutter_components/pages/icon_page.dart';
-import 'package:flutter_components/pages/list_view_builder_page.dart';
-import 'package:flutter_components/pages/stateful_widgets_page.dart';
-import 'package:flutter_components/pages/text_field_page.dart';
-import 'package:flutter_components/pages/text_page.dart';
+import 'package:flutter_components/pages/widgets/button_page.dart';
+import 'package:flutter_components/pages/widgets/card_page.dart';
+import 'package:flutter_components/pages/widgets/dropdown_button_page.dart';
+import 'package:flutter_components/pages/widgets/form_page.dart';
+import 'package:flutter_components/pages/widgets/hello_world_page.dart';
+import 'package:flutter_components/pages/widgets/home_page.dart';
+import 'package:flutter_components/pages/widgets/icon_button_page.dart';
+import 'package:flutter_components/pages/widgets/icon_page.dart';
+import 'package:flutter_components/pages/lists/list_view_builder_page.dart';
+import 'package:flutter_components/pages/widgets/safe_area_page.dart';
+import 'package:flutter_components/pages/widgets/stateful_widgets_page.dart';
+import 'package:flutter_components/pages/widgets/text_field_page.dart';
+import 'package:flutter_components/pages/widgets/text_page.dart';
 import 'package:flutter_components/pages/widgets/align_page.dart';
 import 'package:flutter_components/pages/widgets/chip_page.dart';
 import 'package:flutter_components/pages/widgets/container_page.dart';
@@ -18,6 +19,7 @@ import 'package:flutter_components/pages/widgets/page_view_horizontal_page.dart'
 import 'package:flutter_components/pages/widgets/page_view_vertical_page.dart';
 import 'package:flutter_components/pages/widgets/placeholder_page.dart';
 import 'package:flutter_components/pages/widgets/spacer_page.dart';
+import 'package:flutter_components/pages/widgets/unsafe_area_page.dart';
 import 'package:flutter_components/pages/widgets/wrap_page.dart';
 
 final routes = <String, WidgetBuilder>{
@@ -40,5 +42,9 @@ final routes = <String, WidgetBuilder>{
   '/chip': (context) => ChipPage(),
   '/page_view_horizontal': (context) => PageViewHorizontalPage(),
   '/page_view_vertical': (context) => PageViewVerticalPage(),
+  '/unsafe_area': (context) => UnsafeAreaPage(),
+  '/safe_area': (context) => SafeAreaPage(),
+
+   // * List
   '/listview': (context) => ListViewBuilderPage(),
 };

@@ -15,6 +15,24 @@ class HomePage extends StatelessWidget {
             children: <Widget>[
               ListTile(
                 title: Text(
+                  'Safe Area',
+                  style: TextStyle(color: Colors.blue),
+                ),
+                onTap: () {
+                  Navigator.pushNamed(context, '/safe_area');
+                },
+              ),
+              ListTile(
+                title: Text(
+                  'Unsafe Area',
+                  style: TextStyle(color: Colors.blue),
+                ),
+                onTap: () {
+                  Navigator.pushNamed(context, '/unsafe_area');
+                },
+              ),
+              ListTile(
+                title: Text(
                   'Hello World',
                   style: TextStyle(color: Colors.blue),
                 ),
