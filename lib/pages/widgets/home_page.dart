@@ -15,6 +15,15 @@ class HomePage extends StatelessWidget {
             children: <Widget>[
               ListTile(
                 title: Text(
+                  'List View Builder Two',
+                  style: TextStyle(color: Colors.blue),
+                ),
+                onTap: () {
+                  Navigator.pushNamed(context, '/list_view_two');
+                },
+              ),
+              ListTile(
+                title: Text(
                   'List Tile',
                   style: TextStyle(color: Colors.blue),
                 ),
@@ -181,7 +190,7 @@ class HomePage extends StatelessWidget {
                   style: TextStyle(color: Colors.blue),
                 ),
                 onTap: () {
-                  Navigator.pushNamed(context, '/listview');
+                  Navigator.pushNamed(context, '/list_view');
                 },
               ),
               ListTile(

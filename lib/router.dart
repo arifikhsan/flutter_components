@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_components/pages/lists/grid_list_page.dart';
 import 'package:flutter_components/pages/lists/list_tile_page.dart';
+import 'package:flutter_components/pages/lists/list_view_builder_two_page.dart';
 import 'package:flutter_components/pages/widgets/button_page.dart';
 import 'package:flutter_components/pages/widgets/card_page.dart';
 import 'package:flutter_components/pages/widgets/dropdown_button_page.dart';
@@ -58,7 +59,8 @@ final routes = <String, WidgetBuilder>{
   '/safe_area': (context) => SafeAreaPage(),
 
    // * Lists
-  '/listview': (context) => ListViewBuilderPage(),
+  '/list_view': (context) => ListViewBuilderPage(),
+  '/list_view_two': (context) => ListViewBuilderTwoPage(),
   '/list_tile': (context) => ListTilePage(),
   '/grid_list': (context) => GridListPage(),
 };
