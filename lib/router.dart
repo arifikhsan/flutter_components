@@ -4,6 +4,7 @@ import 'package:flutter_components/pages/lists/list_tile_page.dart';
 import 'package:flutter_components/pages/lists/list_view_builder_two_page.dart';
 import 'package:flutter_components/pages/widgets/button_page.dart';
 import 'package:flutter_components/pages/widgets/card_page.dart';
+import 'package:flutter_components/pages/widgets/clip_page.dart';
 import 'package:flutter_components/pages/widgets/dropdown_button_page.dart';
 import 'package:flutter_components/pages/widgets/flexible_page.dart';
 import 'package:flutter_components/pages/layouts/floating_action_button.dart';
@@ -51,6 +52,7 @@ final routes = <String, WidgetBuilder>{
   '/tooltip': (context) => TooltipPage(),
   '/flexible': (context) => FlexiblePage(),
   '/stack': (context) => StackPage(),
+  '/clip': (context) => ClipPage(),
 
   // * Layouts
   '/page_view_horizontal': (context) => PageViewHorizontalPage(),
