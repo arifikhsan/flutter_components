@@ -9,6 +9,7 @@ class AppbarPage extends StatelessWidget {
         backgroundColor: Colors.purple,
         leading: IconButton(
           icon: Icon(Icons.train),
+          tooltip: 'Train',
           onPressed: () {
             Fluttertoast.showToast(msg: 'Hello train');
           },
@@ -17,12 +18,14 @@ class AppbarPage extends StatelessWidget {
         actions: <Widget>[
           IconButton(
             icon: Icon(Icons.directions_bike),
+            tooltip: 'Bike',
             onPressed: () {
               Fluttertoast.showToast(msg: 'Hello bike');
             },
           ),
           IconButton(
             icon: Icon(Icons.business),
+            tooltip: 'Business',
             onPressed: () {
               Fluttertoast.showToast(msg: 'Hello business');
             },
