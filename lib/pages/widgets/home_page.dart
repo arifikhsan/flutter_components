@@ -15,6 +15,15 @@ class HomePage extends StatelessWidget {
             children: <Widget>[
               ListTile(
                 title: Text(
+                  'Sliver Appbar',
+                  style: TextStyle(color: Colors.blue),
+                ),
+                onTap: () {
+                  Navigator.pushNamed(context, '/sliver_appbar');
+                },
+              ),
+              ListTile(
+                title: Text(
                   'Appbar',
                   style: TextStyle(color: Colors.blue),
                 ),

@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_components/pages/layouts/appbar_page.dart';
+import 'package:flutter_components/pages/layouts/sliver_appbar_page.dart';
 import 'package:flutter_components/pages/lists/grid_list_page.dart';
 import 'package:flutter_components/pages/lists/list_tile_page.dart';
 import 'package:flutter_components/pages/lists/list_view_builder_two_page.dart';
@@ -63,6 +64,7 @@ final routes = <String, WidgetBuilder>{
   '/unsafe_area': (context) => UnsafeAreaPage(),
   '/safe_area': (context) => SafeAreaPage(),
   '/appbar': (context) => AppbarPage(),
+  '/sliver_appbar': (context) => SliverAppbarPage(),
 
    // * Lists
   '/list_view': (context) => ListViewBuilderPage(),
