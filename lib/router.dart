@@ -15,6 +15,7 @@ import 'package:flutter_components/pages/widgets/icon_button_page.dart';
 import 'package:flutter_components/pages/widgets/icon_page.dart';
 import 'package:flutter_components/pages/lists/list_view_builder_page.dart';
 import 'package:flutter_components/pages/layouts/safe_area_page.dart';
+import 'package:flutter_components/pages/widgets/sizedbox_page.dart';
 import 'package:flutter_components/pages/widgets/stack_page.dart';
 import 'package:flutter_components/pages/widgets/stateful_widgets_page.dart';
 import 'package:flutter_components/pages/widgets/text_field_page.dart';
@@ -53,6 +54,7 @@ final routes = <String, WidgetBuilder>{
   '/flexible': (context) => FlexiblePage(),
   '/stack': (context) => StackPage(),
   '/clip': (context) => ClipPage(),
+  '/sizedbox': (context) => SizedboxPage(),
 
   // * Layouts
   '/page_view_horizontal': (context) => PageViewHorizontalPage(),
