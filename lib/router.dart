@@ -22,6 +22,7 @@ import 'package:flutter_components/pages/widgets/icon_page.dart';
 import 'package:flutter_components/pages/lists/list_view_builder_page.dart';
 import 'package:flutter_components/pages/layouts/safe_area_page.dart';
 import 'package:flutter_components/pages/widgets/sizedbox_page.dart';
+import 'package:flutter_components/pages/widgets/snackbar_page.dart';
 import 'package:flutter_components/pages/widgets/stack_page.dart';
 import 'package:flutter_components/pages/widgets/stateful_widgets_page.dart';
 import 'package:flutter_components/pages/widgets/stateless_widgets_page.dart';
@@ -64,6 +65,7 @@ final Map<String, WidgetBuilder> routes = <String, WidgetBuilder>{
   '/stack': (BuildContext context) => StackPage(),
   '/clip': (BuildContext context) => ClipPage(),
   '/sizedbox': (BuildContext context) => SizedboxPage(),
+  '/snackbar': (BuildContext context) => SnackbarPage(),
 
   // * Layouts
   '/page_view_horizontal': (BuildContext context) => PageViewHorizontalPage(),
