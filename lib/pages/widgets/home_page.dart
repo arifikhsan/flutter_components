@@ -5,14 +5,23 @@ class HomePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Flutter Components'),
+        title: const Text('Flutter Components'),
         centerTitle: true,
       ),
       body: Container(
-        margin: EdgeInsets.only(top: 8),
+        margin: const EdgeInsets.only(top: 8),
         child: Center(
           child: ListView(
             children: <Widget>[
+              ListTile(
+                title: Text(
+                  'Opacity Animations',
+                  style: TextStyle(color: Colors.blue),
+                ),
+                onTap: () {
+                  Navigator.pushNamed(context, '/opacity_animation');
+                },
+              ),
               ListTile(
                 title: Text(
                   'Counter Bloc',

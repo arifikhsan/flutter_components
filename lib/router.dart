@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_components/pages/animations/opacity_animation_page.dart';
 import 'package:flutter_components/pages/layouts/appbar_page.dart';
 import 'package:flutter_components/pages/layouts/sliver_appbar_page.dart';
 import 'package:flutter_components/pages/lists/grid_list_page.dart';
@@ -35,46 +36,50 @@ import 'package:flutter_components/pages/widgets/tooltip_page.dart';
 import 'package:flutter_components/pages/layouts/unsafe_area_page.dart';
 import 'package:flutter_components/pages/widgets/wrap_page.dart';
 
-final routes = <String, WidgetBuilder>{
-  '/': (context) => HomePage(),
-  '/hello_world': (context) => HelloWorldPage(),
-  '/button': (context) => ButtonPage(),
-  '/icon': (context) => IconPage(),
-  '/icon_button': (context) => IconButtonPage(),
-  '/text': (context) => TextPage(),
-  '/card': (context) => CardPage(),
-  '/dropdown_button': (context) => DropdownButtonPage(),
-  '/text_field': (context) => TextFieldPage(),
+final Map<String, WidgetBuilder> routes = <String, WidgetBuilder>{
+  '/': (BuildContext context) => HomePage(),
+  '/hello_world': (BuildContext context) => HelloWorldPage(),
+  '/button': (BuildContext context) => ButtonPage(),
+  '/icon': (BuildContext context) => IconPage(),
+  '/icon_button': (BuildContext context) => IconButtonPage(),
+  '/text': (BuildContext context) => TextPage(),
+  '/card': (BuildContext context) => CardPage(),
+  '/dropdown_button': (BuildContext context) => DropdownButtonPage(),
+  '/text_field': (BuildContext context) => TextFieldPage(),
   '/stateful_widgets': (BuildContext context) => StatefulWidgetsPage(),
   '/stateless_widgets': (BuildContext context) => StatelessWidgetsPage(),
-  '/form': (context) => FormPage(),
-  '/placeholder': (context) => PlaceholderPage(),
-  '/align': (context) => AlignPage(),
-  '/spacer': (context) => SpacerPage(),
-  '/container': (context) => ContainerPage(),
-  '/wrap': (context) => WrapPage(),
-  '/chip': (context) => ChipPage(),
-  '/floating_action_button': (context) => FloatingActionButtonPage(),
-  '/tooltip': (context) => TooltipPage(),
-  '/flexible': (context) => FlexiblePage(),
-  '/stack': (context) => StackPage(),
-  '/clip': (context) => ClipPage(),
-  '/sizedbox': (context) => SizedboxPage(),
+  '/form': (BuildContext context) => FormPage(),
+  '/placeholder': (BuildContext context) => PlaceholderPage(),
+  '/align': (BuildContext context) => AlignPage(),
+  '/spacer': (BuildContext context) => SpacerPage(),
+  '/container': (BuildContext context) => ContainerPage(),
+  '/wrap': (BuildContext context) => WrapPage(),
+  '/chip': (BuildContext context) => ChipPage(),
+  '/floating_action_button': (BuildContext context) =>
+      FloatingActionButtonPage(),
+  '/tooltip': (BuildContext context) => TooltipPage(),
+  '/flexible': (BuildContext context) => FlexiblePage(),
+  '/stack': (BuildContext context) => StackPage(),
+  '/clip': (BuildContext context) => ClipPage(),
+  '/sizedbox': (BuildContext context) => SizedboxPage(),
 
   // * Layouts
-  '/page_view_horizontal': (context) => PageViewHorizontalPage(),
-  '/page_view_vertical': (context) => PageViewVerticalPage(),
-  '/unsafe_area': (context) => UnsafeAreaPage(),
-  '/safe_area': (context) => SafeAreaPage(),
-  '/appbar': (context) => AppbarPage(),
-  '/sliver_appbar': (context) => SliverAppbarPage(),
+  '/page_view_horizontal': (BuildContext context) => PageViewHorizontalPage(),
+  '/page_view_vertical': (BuildContext context) => PageViewVerticalPage(),
+  '/unsafe_area': (BuildContext context) => UnsafeAreaPage(),
+  '/safe_area': (BuildContext context) => SafeAreaPage(),
+  '/appbar': (BuildContext context) => AppbarPage(),
+  '/sliver_appbar': (BuildContext context) => SliverAppbarPage(),
 
-   // * Lists
-  '/list_view': (context) => ListViewBuilderPage(),
-  '/list_view_two': (context) => ListViewBuilderTwoPage(),
-  '/list_tile': (context) => ListTilePage(),
-  '/grid_list': (context) => GridListPage(),
+  // * Lists
+  '/list_view': (BuildContext context) => ListViewBuilderPage(),
+  '/list_view_two': (BuildContext context) => ListViewBuilderTwoPage(),
+  '/list_tile': (BuildContext context) => ListTilePage(),
+  '/grid_list': (BuildContext context) => GridListPage(),
 
   // * State Management
-  '/bloc': (context) => CounterPage(),
+  '/bloc': (BuildContext context) => CounterPage(),
+
+  // * Animations
+  '/opacity_animation': (BuildContext context) => OpacityAnimationPage(),
 };
