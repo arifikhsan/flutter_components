@@ -5,11 +5,11 @@ class HelloWorldPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Hello World'),
+        title: const Text('Hello World'),
       ),
       body: Center(
         child: Container(
-          child: Text('Hello World'),
+          child: const Text('Hello World'),
         ),
       ),
     );

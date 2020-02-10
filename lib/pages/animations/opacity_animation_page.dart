@@ -10,14 +10,6 @@ class _OpacityAnimationPageState extends State<OpacityAnimationPage> {
   double opacityTwo = 1.0;
   double opacityThree = 1.0;
 
-  Widget _coloredSquare(Color color) {
-    return Container(
-      width: 100,
-      height: 100,
-      color: color,
-    );
-  }
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
