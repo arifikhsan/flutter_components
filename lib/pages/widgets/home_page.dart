@@ -15,6 +15,15 @@ class HomePage extends StatelessWidget {
             children: <Widget>[
               ListTile(
                 title: Text(
+                  'Dialog',
+                  style: TextStyle(color: Colors.blue),
+                ),
+                onTap: () {
+                  Navigator.pushNamed(context, '/dialog');
+                },
+              ),
+              ListTile(
+                title: Text(
                   'Flushbar',
                   style: TextStyle(color: Colors.blue),
                 ),

@@ -11,6 +11,7 @@ import 'package:flutter_components/pages/state/counter_page.dart';
 import 'package:flutter_components/pages/widgets/button_page.dart';
 import 'package:flutter_components/pages/widgets/card_page.dart';
 import 'package:flutter_components/pages/widgets/clip_page.dart';
+import 'package:flutter_components/pages/widgets/dialog_page.dart';
 import 'package:flutter_components/pages/widgets/dropdown_button_page.dart';
 import 'package:flutter_components/pages/widgets/flexible_page.dart';
 import 'package:flutter_components/pages/layouts/floating_action_button.dart';
@@ -68,6 +69,7 @@ final Map<String, WidgetBuilder> routes = <String, WidgetBuilder>{
   '/sizedbox': (BuildContext context) => SizedboxPage(),
   '/snackbar': (BuildContext context) => SnackbarPage(),
   '/flushbar': (BuildContext context) => FlushbarPage(),
+  '/dialog': (BuildContext context) => DialogPage(),
 
   // * Layouts
   '/page_view_horizontal': (BuildContext context) => PageViewHorizontalPage(),
