@@ -28,12 +28,14 @@ class UselesslyNestedWidget extends StatelessWidget {
   }
 
   void showDefaultsnackbar(BuildContext context) {
-    Scaffold.of(context).showSnackBar(SnackBar(
-      content: const Text('Hello from the default snackbar'),
-      action: SnackBarAction(
-        label: 'Click me',
-        onPressed: () {},
+    Scaffold.of(context).showSnackBar(
+      SnackBar(
+        content: const Text('Hello from the default snackbar'),
+        action: SnackBarAction(
+          label: 'Click me',
+          onPressed: () {},
+        ),
       ),
-    ));
+    );
   }
 }

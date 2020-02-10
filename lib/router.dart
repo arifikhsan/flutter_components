@@ -14,6 +14,7 @@ import 'package:flutter_components/pages/widgets/clip_page.dart';
 import 'package:flutter_components/pages/widgets/dropdown_button_page.dart';
 import 'package:flutter_components/pages/widgets/flexible_page.dart';
 import 'package:flutter_components/pages/layouts/floating_action_button.dart';
+import 'package:flutter_components/pages/widgets/flushbar_page.dart';
 import 'package:flutter_components/pages/widgets/form_page.dart';
 import 'package:flutter_components/pages/widgets/hello_world_page.dart';
 import 'package:flutter_components/pages/widgets/home_page.dart';
@@ -66,6 +67,7 @@ final Map<String, WidgetBuilder> routes = <String, WidgetBuilder>{
   '/clip': (BuildContext context) => ClipPage(),
   '/sizedbox': (BuildContext context) => SizedboxPage(),
   '/snackbar': (BuildContext context) => SnackbarPage(),
+  '/flushbar': (BuildContext context) => FlushbarPage(),
 
   // * Layouts
   '/page_view_horizontal': (BuildContext context) => PageViewHorizontalPage(),
