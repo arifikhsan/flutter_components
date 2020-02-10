@@ -15,6 +15,15 @@ class HomePage extends StatelessWidget {
             children: <Widget>[
               ListTile(
                 title: Text(
+                  'Bottom Tabbar',
+                  style: TextStyle(color: Colors.blue),
+                ),
+                onTap: () {
+                  Navigator.pushNamed(context, '/bottom_tabbar');
+                },
+              ),
+              ListTile(
+                title: Text(
                   'Tabbar',
                   style: TextStyle(color: Colors.blue),
                 ),

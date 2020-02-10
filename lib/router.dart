@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_components/pages/animations/opacity_animation_page.dart';
 import 'package:flutter_components/pages/layouts/appbar_page.dart';
+import 'package:flutter_components/pages/layouts/bottom_tabbar_page.dart';
 import 'package:flutter_components/pages/layouts/sliver_appbar_page.dart';
 import 'package:flutter_components/pages/layouts/tabbar_page.dart';
 import 'package:flutter_components/pages/lists/grid_list_page.dart';
@@ -71,6 +72,7 @@ final Map<String, WidgetBuilder> routes = <String, WidgetBuilder>{
   '/safe_area': (BuildContext context) => SafeAreaPage(),
   '/appbar': (BuildContext context) => AppbarPage(),
   '/tabbar': (BuildContext context) => TabbarPage(),
+  '/bottom_tabbar': (BuildContext context) => BottomTabbarPage(),
   '/sliver_appbar': (BuildContext context) => SliverAppbarPage(),
 
   // * Lists
