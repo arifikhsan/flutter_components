@@ -15,6 +15,15 @@ class HomePage extends StatelessWidget {
             children: <Widget>[
               ListTile(
                 title: Text(
+                  'Counter Bloc',
+                  style: TextStyle(color: Colors.blue),
+                ),
+                onTap: () {
+                  Navigator.pushNamed(context, '/bloc');
+                },
+              ),
+              ListTile(
+                title: Text(
                   'Sliver Appbar',
                   style: TextStyle(color: Colors.blue),
                 ),

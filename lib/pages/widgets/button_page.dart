@@ -2,15 +2,15 @@ import 'package:flutter/material.dart';
 import 'package:fluttertoast/fluttertoast.dart';
 
 class ButtonPage extends StatelessWidget {
-  _showToast() {
-    Fluttertoast.showToast(msg: 'Hello there');
+  Future<bool> _showToast() {
+    return Fluttertoast.showToast(msg: 'Hello there');
   }
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Buttons'),
+        title: const Text('Buttons'),
       ),
       body: Center(
         child: Container(
@@ -70,7 +70,7 @@ class ButtonPage extends StatelessWidget {
                   ),
                   FlatButton(
                     color: Colors.blue,
-                    child: Text(
+                    child: const Text(
                       'DisabledFlatButton',
                     ),
                     onPressed: _showToast,
