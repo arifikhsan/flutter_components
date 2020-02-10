@@ -21,6 +21,7 @@ import 'package:flutter_components/pages/layouts/safe_area_page.dart';
 import 'package:flutter_components/pages/widgets/sizedbox_page.dart';
 import 'package:flutter_components/pages/widgets/stack_page.dart';
 import 'package:flutter_components/pages/widgets/stateful_widgets_page.dart';
+import 'package:flutter_components/pages/widgets/stateless_widgets_page.dart';
 import 'package:flutter_components/pages/widgets/text_field_page.dart';
 import 'package:flutter_components/pages/widgets/text_page.dart';
 import 'package:flutter_components/pages/widgets/align_page.dart';
@@ -44,7 +45,8 @@ final routes = <String, WidgetBuilder>{
   '/card': (context) => CardPage(),
   '/dropdown_button': (context) => DropdownButtonPage(),
   '/text_field': (context) => TextFieldPage(),
-  '/stateful_widgets': (context) => StatefulWidgetsPage(),
+  '/stateful_widgets': (BuildContext context) => StatefulWidgetsPage(),
+  '/stateless_widgets': (BuildContext context) => StatelessWidgetsPage(),
   '/form': (context) => FormPage(),
   '/placeholder': (context) => PlaceholderPage(),
   '/align': (context) => AlignPage(),

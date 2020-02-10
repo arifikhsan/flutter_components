@@ -222,6 +222,15 @@ class HomePage extends StatelessWidget {
               ),
               ListTile(
                 title: Text(
+                  'Stateless Widgets',
+                  style: TextStyle(color: Colors.blue),
+                ),
+                onTap: () {
+                  Navigator.pushNamed(context, '/stateless_widgets');
+                },
+              ),
+              ListTile(
+                title: Text(
                   'Form',
                   style: TextStyle(color: Colors.blue),
                 ),
