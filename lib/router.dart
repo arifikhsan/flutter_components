@@ -8,6 +8,7 @@ import 'package:flutter_components/pages/lists/grid_list_page.dart';
 import 'package:flutter_components/pages/lists/list_tile_page.dart';
 import 'package:flutter_components/pages/lists/list_view_builder_two_page.dart';
 import 'package:flutter_components/pages/network/chopper_page.dart';
+import 'package:flutter_components/pages/persistents/shared_preferences_page.dart';
 import 'package:flutter_components/pages/state/counter_page.dart';
 import 'package:flutter_components/pages/widgets/button_page.dart';
 import 'package:flutter_components/pages/widgets/card_page.dart';
@@ -98,4 +99,7 @@ final Map<String, WidgetBuilder> routes = <String, WidgetBuilder>{
 
   // * Network
   '/chopper': (BuildContext context) => ChopperPage(),
+
+  // * Shared Preferences
+  '/shared_preferences': (BuildContext context) => SharedPreferencesPage(),
 };
