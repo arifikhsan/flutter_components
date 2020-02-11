@@ -70,7 +70,7 @@ class _SharedPreferencesPageState extends State<SharedPreferencesPage> {
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               children: <Widget>[
                 Text('$toggle'),
-                SizedBox(
+                const SizedBox(
                   height: 16,
                 ),
                 RaisedButton(

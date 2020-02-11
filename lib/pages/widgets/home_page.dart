@@ -15,6 +15,24 @@ class HomePage extends StatelessWidget {
             children: <Widget>[
               ListTile(
                 title: Text(
+                  'Animated Builder',
+                  style: TextStyle(color: Colors.blue),
+                ),
+                onTap: () {
+                  Navigator.pushNamed(context, '/animated_builder');
+                },
+              ),
+              ListTile(
+                title: Text(
+                  'Animated Widget',
+                  style: TextStyle(color: Colors.blue),
+                ),
+                onTap: () {
+                  Navigator.pushNamed(context, '/animated_widget');
+                },
+              ),
+              ListTile(
+                title: Text(
                   'Shared Preferences',
                   style: TextStyle(color: Colors.blue),
                 ),
