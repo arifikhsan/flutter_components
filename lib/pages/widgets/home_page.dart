@@ -15,6 +15,15 @@ class HomePage extends StatelessWidget {
             children: <Widget>[
               ListTile(
                 title: Text(
+                  'Animated Cross Fade',
+                  style: TextStyle(color: Colors.blue),
+                ),
+                onTap: () {
+                  Navigator.pushNamed(context, '/animated_cross_fade');
+                },
+              ),
+              ListTile(
+                title: Text(
                   'Animated Container',
                   style: TextStyle(color: Colors.blue),
                 ),
@@ -358,9 +367,7 @@ class HomePage extends StatelessWidget {
               ListTile(
                 title: Text(
                   'Placeholder',
-                  style: TextStyle(
-                    color: Colors.blue
-                  ),
+                  style: TextStyle(color: Colors.blue),
                 ),
                 onTap: () {
                   Navigator.pushNamed(context, '/placeholder');
@@ -369,9 +376,7 @@ class HomePage extends StatelessWidget {
               ListTile(
                 title: Text(
                   'Align',
-                  style: TextStyle(
-                    color: Colors.blue
-                  ),
+                  style: TextStyle(color: Colors.blue),
                 ),
                 onTap: () {
                   Navigator.pushNamed(context, '/align');
@@ -380,9 +385,7 @@ class HomePage extends StatelessWidget {
               ListTile(
                 title: Text(
                   'Spacer',
-                  style: TextStyle(
-                    color: Colors.blue
-                  ),
+                  style: TextStyle(color: Colors.blue),
                 ),
                 onTap: () {
                   Navigator.pushNamed(context, '/spacer');
@@ -391,9 +394,7 @@ class HomePage extends StatelessWidget {
               ListTile(
                 title: Text(
                   'Container',
-                  style: TextStyle(
-                    color: Colors.blue
-                  ),
+                  style: TextStyle(color: Colors.blue),
                 ),
                 onTap: () {
                   Navigator.pushNamed(context, '/container');
@@ -402,9 +403,7 @@ class HomePage extends StatelessWidget {
               ListTile(
                 title: Text(
                   'Wrap',
-                  style: TextStyle(
-                    color: Colors.blue
-                  ),
+                  style: TextStyle(color: Colors.blue),
                 ),
                 onTap: () {
                   Navigator.pushNamed(context, '/wrap');
@@ -413,9 +412,7 @@ class HomePage extends StatelessWidget {
               ListTile(
                 title: Text(
                   'Chip',
-                  style: TextStyle(
-                    color: Colors.blue
-                  ),
+                  style: TextStyle(color: Colors.blue),
                 ),
                 onTap: () {
                   Navigator.pushNamed(context, '/chip');
@@ -424,9 +421,7 @@ class HomePage extends StatelessWidget {
               ListTile(
                 title: Text(
                   'Page View Horizontal',
-                  style: TextStyle(
-                    color: Colors.blue
-                  ),
+                  style: TextStyle(color: Colors.blue),
                 ),
                 onTap: () {
                   Navigator.pushNamed(context, '/page_view_horizontal');
@@ -435,9 +430,7 @@ class HomePage extends StatelessWidget {
               ListTile(
                 title: Text(
                   'Page View Vertical',
-                  style: TextStyle(
-                    color: Colors.blue
-                  ),
+                  style: TextStyle(color: Colors.blue),
                 ),
                 onTap: () {
                   Navigator.pushNamed(context, '/page_view_vertical');
