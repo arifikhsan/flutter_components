@@ -21,7 +21,8 @@
 analyzer:
   strong-mode:
     implicit-casts: false
-    implicit-dynamic: false
+    implicit-dynamic: true
+    
   errors:
     # treat missing required parameters as a warning (not a hint)
     missing_required_param: warning
@@ -33,6 +34,7 @@ analyzer:
     # Stream and not importing dart:async
     # Please see https://github.com/flutter/flutter/pull/24528 for details.
     sdk_version_async_exported_from_core: ignore
+    argument_type_not_assignable: ignore
   exclude:
     - "bin/cache/**"
     # the following two are relative to the stocks example and the flutter package respectively

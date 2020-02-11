@@ -7,6 +7,7 @@ import 'package:flutter_components/pages/layouts/tabbar_page.dart';
 import 'package:flutter_components/pages/lists/grid_list_page.dart';
 import 'package:flutter_components/pages/lists/list_tile_page.dart';
 import 'package:flutter_components/pages/lists/list_view_builder_two_page.dart';
+import 'package:flutter_components/pages/network/chopper_page.dart';
 import 'package:flutter_components/pages/state/counter_page.dart';
 import 'package:flutter_components/pages/widgets/button_page.dart';
 import 'package:flutter_components/pages/widgets/card_page.dart';
@@ -94,4 +95,7 @@ final Map<String, WidgetBuilder> routes = <String, WidgetBuilder>{
 
   // * Animations
   '/opacity_animation': (BuildContext context) => OpacityAnimationPage(),
+
+  // * Network
+  '/chopper': (BuildContext context) => ChopperPage(),
 };

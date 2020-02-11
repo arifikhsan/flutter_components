@@ -24,6 +24,15 @@ class HomePage extends StatelessWidget {
               ),
               ListTile(
                 title: Text(
+                  'Chopper',
+                  style: TextStyle(color: Colors.blue),
+                ),
+                onTap: () {
+                  Navigator.pushNamed(context, '/chopper');
+                },
+              ),
+              ListTile(
+                title: Text(
                   'Dialog',
                   style: TextStyle(color: Colors.blue),
                 ),
