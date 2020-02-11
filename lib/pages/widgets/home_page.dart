@@ -15,6 +15,15 @@ class HomePage extends StatelessWidget {
             children: <Widget>[
               ListTile(
                 title: Text(
+                  'Animation',
+                  style: TextStyle(color: Colors.blue),
+                ),
+                onTap: () {
+                  Navigator.pushNamed(context, '/animation');
+                },
+              ),
+              ListTile(
+                title: Text(
                   'Animated Cross Fade',
                   style: TextStyle(color: Colors.blue),
                 ),

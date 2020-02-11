@@ -3,6 +3,7 @@ import 'package:flutter_components/pages/animations/animated_builder_page.dart';
 import 'package:flutter_components/pages/animations/animated_container_page.dart';
 import 'package:flutter_components/pages/animations/animated_cross_fade.dart';
 import 'package:flutter_components/pages/animations/animated_widget_page.dart';
+import 'package:flutter_components/pages/animations/animation_page.dart';
 import 'package:flutter_components/pages/animations/opacity_animation_page.dart';
 import 'package:flutter_components/pages/layouts/appbar_page.dart';
 import 'package:flutter_components/pages/layouts/bottom_tabbar_page.dart';
@@ -104,6 +105,7 @@ final Map<String, WidgetBuilder> routes = <String, WidgetBuilder>{
   '/animated_builder': (BuildContext context) => AnimatedBuilderPage(),
   '/animated_container': (BuildContext context) => AnimatedContainerPage(),
   '/animated_cross_fade': (BuildContext context) => AnimatedCrossFadePage(),
+  '/animation': (BuildContext context) => AnimationPage(),
 
   // * Network
   '/chopper': (BuildContext context) => ChopperPage(),
