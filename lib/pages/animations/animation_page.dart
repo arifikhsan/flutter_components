@@ -50,15 +50,13 @@ class _AnimationPageState extends State<AnimationPage>
         title: const Text('Animation'),
       ),
       body: Center(
-        child: Container(
-          child: Transform.rotate(
-            angle: animation.value,
-            child: Container(
-              alignment: Alignment.center,
-              padding: EdgeInsets.all(16),
-              child: FlutterLogo(
-                size: 96,
-              ),
+        child: Transform.rotate(
+          angle: animation.value,
+          child: Container(
+            alignment: Alignment.center,
+            padding: const EdgeInsets.all(16),
+            child: const FlutterLogo(
+              size: 96,
             ),
           ),
         ),
