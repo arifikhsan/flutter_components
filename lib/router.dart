@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_components/pages/animations/animated_builder_page.dart';
+import 'package:flutter_components/pages/animations/animated_container_page.dart';
 import 'package:flutter_components/pages/animations/animated_widget_page.dart';
 import 'package:flutter_components/pages/animations/opacity_animation_page.dart';
 import 'package:flutter_components/pages/layouts/appbar_page.dart';
@@ -100,6 +101,7 @@ final Map<String, WidgetBuilder> routes = <String, WidgetBuilder>{
   '/opacity_animation': (BuildContext context) => OpacityAnimationPage(),
   '/animated_widget': (BuildContext context) => AnimatedWidgetPage(),
   '/animated_builder': (BuildContext context) => AnimatedBuilderPage(),
+  '/animated_container': (BuildContext context) => AnimatedContainerPage(),
 
   // * Network
   '/chopper': (BuildContext context) => ChopperPage(),
