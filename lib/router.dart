@@ -17,6 +17,7 @@ import 'package:flutter_components/pages/widgets/flexible_page.dart';
 import 'package:flutter_components/pages/layouts/floating_action_button.dart';
 import 'package:flutter_components/pages/widgets/flushbar_page.dart';
 import 'package:flutter_components/pages/widgets/form_page.dart';
+import 'package:flutter_components/pages/widgets/future_builder_page.dart';
 import 'package:flutter_components/pages/widgets/hello_world_page.dart';
 import 'package:flutter_components/pages/widgets/home_page.dart';
 import 'package:flutter_components/pages/widgets/icon_button_page.dart';
@@ -70,6 +71,7 @@ final Map<String, WidgetBuilder> routes = <String, WidgetBuilder>{
   '/snackbar': (BuildContext context) => SnackbarPage(),
   '/flushbar': (BuildContext context) => FlushbarPage(),
   '/dialog': (BuildContext context) => DialogPage(),
+  '/future_builder': (BuildContext context) => FutureBuilderPage(),
 
   // * Layouts
   '/page_view_horizontal': (BuildContext context) => PageViewHorizontalPage(),

@@ -7,10 +7,8 @@ class HelloWorldPage extends StatelessWidget {
       appBar: AppBar(
         title: const Text('Hello World'),
       ),
-      body: Center(
-        child: Container(
-          child: const Text('Hello World'),
-        ),
+      body: const Center(
+        child: Text('Hello World'),
       ),
     );
   }

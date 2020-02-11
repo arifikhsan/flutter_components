@@ -15,6 +15,15 @@ class HomePage extends StatelessWidget {
             children: <Widget>[
               ListTile(
                 title: Text(
+                  'Future Builder',
+                  style: TextStyle(color: Colors.blue),
+                ),
+                onTap: () {
+                  Navigator.pushNamed(context, '/future_builder');
+                },
+              ),
+              ListTile(
+                title: Text(
                   'Dialog',
                   style: TextStyle(color: Colors.blue),
                 ),
