@@ -5,42 +5,42 @@ class ListTilePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('List Tile'),
+        title: const Text('List Tile'),
       ),
       body: Column(
         children: <Widget>[
-          ListTile(
+          const ListTile(
             title: Text('Just a title'),
           ),
-          Divider(),
+          const Divider(),
           ListTile(
-            title: Text('With leading and trailing'),
+            title: const Text('With leading and trailing'),
             leading: Icon(Icons.tag_faces),
             trailing: Icon(Icons.sim_card),
           ),
-          Divider(),
-          ListTile(
+          const Divider(),
+          const ListTile(
             title: Text('Title'),
             subtitle: Text('Subtitle'),
           ),
-          Divider(),
-          ListTile(
-            title: Text("Three lines"),
+          const Divider(),
+          const ListTile(
+            title: Text('Three lines'),
             subtitle: Text('Subtitle'),
             isThreeLine: true,
           ),
-          Divider(),
-          ListTile(
+          const Divider(),
+          const ListTile(
             title: Text('Dense'),
             dense: true,
           ),
-          Divider(),
-          ListTile(
+          const Divider(),
+          const ListTile(
             title: Text('Dense title'),
             subtitle: Text('Dense subtitle'),
             dense: true,
           ),
-          Divider(),
+          const Divider(),
         ],
       ),
     );

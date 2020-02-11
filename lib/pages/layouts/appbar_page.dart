@@ -14,7 +14,7 @@ class AppbarPage extends StatelessWidget {
             Fluttertoast.showToast(msg: 'Hello train');
           },
         ),
-        title: Text('Appbar'),
+        title: const Text('Appbar'),
         actions: <Widget>[
           IconButton(
             icon: Icon(Icons.directions_bike),
