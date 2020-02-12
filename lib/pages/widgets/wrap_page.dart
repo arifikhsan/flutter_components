@@ -13,7 +13,7 @@ class WrapPage extends StatelessWidget {
           spacing: 8,
           runSpacing: 2,
           children: <Widget>[
-            Chip(
+            const Chip(
               backgroundColor: Colors.blue,
               elevation: 4,
               label: Text(
@@ -23,7 +23,7 @@ class WrapPage extends StatelessWidget {
                 ),
               ),
             ),
-            Chip(
+            const Chip(
               backgroundColor: Colors.blue,
               elevation: 4,
               label: Text(
@@ -33,7 +33,7 @@ class WrapPage extends StatelessWidget {
                 ),
               ),
             ),
-            Chip(
+            const Chip(
               backgroundColor: Colors.blue,
               elevation: 4,
               label: Text(
@@ -43,7 +43,7 @@ class WrapPage extends StatelessWidget {
                 ),
               ),
             ),
-            Chip(
+            const Chip(
               backgroundColor: Colors.blue,
               elevation: 4,
               label: Text(
@@ -53,7 +53,7 @@ class WrapPage extends StatelessWidget {
                 ),
               ),
             ),
-            Chip(
+            const Chip(
               backgroundColor: Colors.blue,
               elevation: 4,
               label: Text(
@@ -63,7 +63,7 @@ class WrapPage extends StatelessWidget {
                 ),
               ),
             ),
-            Chip(
+            const Chip(
               backgroundColor: Colors.blue,
               elevation: 4,
               label: Text(
@@ -73,7 +73,7 @@ class WrapPage extends StatelessWidget {
                 ),
               ),
             ),
-            Chip(
+            const Chip(
               backgroundColor: Colors.blue,
               elevation: 4,
               label: Text(
@@ -83,7 +83,7 @@ class WrapPage extends StatelessWidget {
                 ),
               ),
             ),
-            Chip(
+            const Chip(
               backgroundColor: Colors.blue,
               elevation: 4,
               label: Text(
@@ -93,7 +93,7 @@ class WrapPage extends StatelessWidget {
                 ),
               ),
             ),
-            Chip(
+            const Chip(
               backgroundColor: Colors.blue,
               elevation: 4,
               label: Text(
@@ -103,7 +103,7 @@ class WrapPage extends StatelessWidget {
                 ),
               ),
             ),
-            Chip(
+            const Chip(
               backgroundColor: Colors.blue,
               elevation: 4,
               label: Text(
@@ -113,7 +113,7 @@ class WrapPage extends StatelessWidget {
                 ),
               ),
             ),
-            Chip(
+            const Chip(
               backgroundColor: Colors.blue,
               elevation: 4,
               label: Text(

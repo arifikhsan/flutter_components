@@ -16,11 +16,11 @@ class _StatefulWidgetsPageState extends State<StatefulWidgetsPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Sateful widgets'),
+        title: const Text('Sateful widgets'),
       ),
       body: ListView(
         children: <Widget>[
-          Text('switch'),
+          const Text('switch'),
           Center(
             child: Switch(
               value: switchValue,
@@ -31,18 +31,18 @@ class _StatefulWidgetsPageState extends State<StatefulWidgetsPage> {
               },
             ),
           ),
-          SizedBox(
+          const SizedBox(
             height: 20,
           ),
-          Text('disabled switch'),
-          Center(
+          const Text('disabled switch'),
+          const Center(
             child: Switch(
               value: false,
               onChanged: null,
             ),
           ),
-          Divider(),
-          Text('checkbox'),
+          const Divider(),
+          const Text('checkbox'),
           Center(
             child: Checkbox(
               value: checkboxValue,
@@ -53,21 +53,21 @@ class _StatefulWidgetsPageState extends State<StatefulWidgetsPage> {
               },
             ),
           ),
-          SizedBox(
+          const SizedBox(
             height: 20,
           ),
-          Text('disabled checkbox'),
-          Center(
+          const Text('disabled checkbox'),
+          const Center(
             child: Checkbox(
               tristate: true,
               value: null,
               onChanged: null,
             ),
           ),
-          SizedBox(
+          const SizedBox(
             height: 20,
           ),
-          Text('slider'),
+          const Text('slider'),
           Slider(
             value: sliderValueTop,
             onChanged: (double value) {
@@ -76,10 +76,10 @@ class _StatefulWidgetsPageState extends State<StatefulWidgetsPage> {
               });
             },
           ),
-          SizedBox(
+          const SizedBox(
             height: 20,
           ),
-          Text('slider with division and label'),
+          const Text('slider with division and label'),
           Slider(
             value: sliderValueBottom,
             min: 0.0,
@@ -92,15 +92,17 @@ class _StatefulWidgetsPageState extends State<StatefulWidgetsPage> {
               });
             },
           ),
-          SizedBox(
+          const SizedBox(
             height: 20,
           ),
-          Text('linear progress indicator'),
-          LinearProgressIndicator(),
-          Divider(),
-          Center(child: CircularProgressIndicator()),
-          Divider(),
-          Text('radio'),
+          const Text('linear progress indicator'),
+          const LinearProgressIndicator(),
+          const Divider(),
+          const Center(
+            child: CircularProgressIndicator(),
+          ),
+          const Divider(),
+          const Text('radio'),
           Row(
             children: [0, 1, 2, 3, 4].map((int index) {
               return Radio(

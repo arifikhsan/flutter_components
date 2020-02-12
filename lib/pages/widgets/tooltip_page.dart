@@ -19,7 +19,7 @@ class TooltipPage extends StatelessWidget {
                 color: Colors.blue,
                 width: 100,
                 height: 100,
-                child: Center(
+                child: const Center(
                   child: Text(
                     'Long press on me',
                     style: TextStyle(
@@ -38,7 +38,7 @@ class TooltipPage extends StatelessWidget {
                 color: Colors.green,
                 width: 100,
                 height: 100,
-                child: Center(
+                child: const Center(
                   child: Text(
                     'Long press on me',
                     style: TextStyle(
@@ -58,7 +58,7 @@ class TooltipPage extends StatelessWidget {
                 color: Colors.red,
                 width: 100,
                 height: 100,
-                child: Center(
+                child: const Center(
                   child: Text(
                     'Long press on me',
                     style: TextStyle(
