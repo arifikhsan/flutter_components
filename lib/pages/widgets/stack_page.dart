@@ -5,7 +5,7 @@ class StackPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Simple Text'),
+        title: const Text('Simple Text'),
       ),
       body: SingleChildScrollView(
         child: Center(

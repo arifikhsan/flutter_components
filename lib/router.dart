@@ -9,6 +9,7 @@ import 'package:flutter_components/pages/layouts/appbar_page.dart';
 import 'package:flutter_components/pages/layouts/bottom_tabbar_page.dart';
 import 'package:flutter_components/pages/layouts/sliver_appbar_page.dart';
 import 'package:flutter_components/pages/layouts/tabbar_page.dart';
+import 'package:flutter_components/pages/lists/expansion_tile_page.dart';
 import 'package:flutter_components/pages/lists/grid_list_page.dart';
 import 'package:flutter_components/pages/lists/list_tile_page.dart';
 import 'package:flutter_components/pages/lists/list_view_builder_two_page.dart';
@@ -100,6 +101,7 @@ final Map<String, WidgetBuilder> routes = <String, WidgetBuilder>{
   '/list_tile': (BuildContext context) => ListTilePage(),
   '/grid_list': (BuildContext context) => GridListPage(),
   '/reorderable_list': (BuildContext context) => ReorderableListPage(),
+  '/expansion_tile': (BuildContext context) => ExpansionTilePage(),
 
   // * State Management
   '/bloc': (BuildContext context) => CounterPage(),
