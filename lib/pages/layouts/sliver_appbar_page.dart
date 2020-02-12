@@ -15,81 +15,29 @@ class _SliverAppbarPageState extends State<SliverAppbarPage> {
     return Scaffold(
       body: CustomScrollView(
         slivers: <Widget>[
-          const SliverAppBar(
+          SliverAppBar(
+            pinned: pinned,
+            snap: snap,
+            floating: floating,
             expandedHeight: 150,
-            flexibleSpace: FlexibleSpaceBar(
+            flexibleSpace: const FlexibleSpaceBar(
               title: Text(
                 'Flexible space title',
               ),
             ),
           ),
-          // SliverFillRemaining(
-          //   child: Center(
-          //     child: Text('hello'),
-          //   ),
-          // ),
-          SliverFixedExtentList(
-              delegate: SliverChildListDelegate(
-                [
-                  Container(
-                    margin: const EdgeInsets.all(16),
-                    color: Colors.red,
-                    width: 200,
-                    height: 200,
-                    child: const Text('Hello'),
-                  ),
-                  Container(
-                    margin: const EdgeInsets.all(16),
-                    color: Colors.red,
-                    width: 200,
-                    height: 200,
-                    child: const Text('Hello'),
-                  ),
-                  Container(
-                    margin: const EdgeInsets.all(16),
-                    color: Colors.red,
-                    width: 200,
-                    height: 200,
-                    child: const Text('Hello'),
-                  ),
-                  Container(
-                    margin: const EdgeInsets.all(16),
-                    color: Colors.red,
-                    width: 200,
-                    height: 200,
-                    child: const Text('Hello'),
-                  ),
-                  Container(
-                    margin: const EdgeInsets.all(16),
-                    color: Colors.red,
-                    width: 200,
-                    height: 200,
-                    child: const Text('Hello'),
-                  ),
-                  Container(
-                    margin: const EdgeInsets.all(16),
-                    color: Colors.red,
-                    width: 200,
-                    height: 200,
-                    child: const Text('Hello'),
-                  ),
-                  Container(
-                    margin: const EdgeInsets.all(16),
-                    color: Colors.red,
-                    width: 200,
-                    height: 200,
-                    child: const Text('Hello'),
-                  ),
-                  Container(
-                    margin: const EdgeInsets.all(16),
-                    color: Colors.red,
-                    width: 200,
-                    height: 200,
-                    child: const Text('Hello'),
-                  ),
+          SliverFillRemaining(
+            child: Center(
+              child: Column(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: <Widget>[
+                  Text('pinned: $pinned'),
+                  Text('snap: $snap'),
+                  Text('floating: $floating'),
                 ],
               ),
-              itemExtent: 100)
+            ),
+          ),
         ],
       ),
       bottomNavigationBar: BottomAppBar(
