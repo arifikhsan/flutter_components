@@ -7,13 +7,57 @@ class ImagePage extends StatelessWidget {
       appBar: AppBar(
         title: const Text('Image'),
       ),
-      body: Column(
-        children: <Widget>[
-          Image.asset('assets/images/vegetable.jpg'),
-          const FlutterLogo(
-            size: 64,
-          ),
-        ],
+      body: SingleChildScrollView(
+        child: Column(
+          children: <Widget>[
+            Card(
+              clipBehavior: Clip.hardEdge,
+              margin: const EdgeInsets.all(16),
+              elevation: 8,
+              shape: const RoundedRectangleBorder(
+                borderRadius: BorderRadius.all(
+                  Radius.circular(16),
+                ),
+              ),
+              child: Image.asset('assets/images/vegetable.jpg'),
+            ),
+            Card(
+              clipBehavior: Clip.hardEdge,
+              margin: const EdgeInsets.all(16),
+              elevation: 8,
+              shape: const RoundedRectangleBorder(
+                borderRadius: BorderRadius.all(
+                  Radius.circular(16),
+                ),
+              ),
+              child: Image.asset('assets/images/apple.jpg'),
+            ),
+            Card(
+              clipBehavior: Clip.hardEdge,
+              margin: const EdgeInsets.all(16),
+              elevation: 8,
+              shape: const RoundedRectangleBorder(
+                borderRadius: BorderRadius.all(
+                  Radius.circular(16),
+                ),
+              ),
+              child: const FlutterLogo(
+                size: 200,
+              ),
+            ),
+            Card(
+              clipBehavior: Clip.hardEdge,
+              margin: const EdgeInsets.all(16),
+              elevation: 8,
+              shape: const RoundedRectangleBorder(
+                borderRadius: BorderRadius.all(
+                  Radius.circular(16),
+                ),
+              ),
+              child: Image.asset('assets/images/leaf.jpg'),
+            ),
+          ],
+        ),
       ),
     );
   }
