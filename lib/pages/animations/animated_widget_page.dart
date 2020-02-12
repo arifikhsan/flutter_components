@@ -1,4 +1,5 @@
 import 'dart:math' as math;
+
 import 'package:flutter/material.dart';
 
 class AnimatedWidgetPage extends StatefulWidget {
@@ -34,6 +35,12 @@ class _AnimatedWidgetPageState extends State<AnimatedWidgetPage>
       body: Center(
         child: AnimatedBuilder(
           animation: _controller,
+          builder: (BuildContext context, Widget child) {
+            return Transform.rotate(
+              angle: _controller.value * 2.0 * math.pi,
+              child: child,
+            );
+          },
           child: Container(
             width: 200.0,
             height: 200.0,
@@ -42,12 +49,6 @@ class _AnimatedWidgetPageState extends State<AnimatedWidgetPage>
               child: Text('Wee'),
             ),
           ),
-          builder: (BuildContext context, Widget child) {
-            return Transform.rotate(
-              angle: _controller.value * 2.0 * math.pi,
-              child: child,
-            );
-          },
         ),
       ),
     );

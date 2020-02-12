@@ -15,6 +15,24 @@ class HomePage extends StatelessWidget {
             children: <Widget>[
               ListTile(
                 title: Text(
+                  'Image Page',
+                  style: TextStyle(color: Colors.blue),
+                ),
+                onTap: () {
+                  Navigator.pushNamed(context, '/image');
+                },
+              ),
+              ListTile(
+                title: Text(
+                  'Inherited Widget',
+                  style: TextStyle(color: Colors.blue),
+                ),
+                onTap: () {
+                  Navigator.pushNamed(context, '/inherited_widget');
+                },
+              ),
+              ListTile(
+                title: Text(
                   'Animation',
                   style: TextStyle(color: Colors.blue),
                 ),

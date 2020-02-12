@@ -25,6 +25,7 @@ dependencies:
   chopper: ^3.0.1+1
   provider: ^4.0.3
   shared_preferences: ^0.5.6+1
+  sum_types: ^0.2.1+2
 
   # The following adds the Cupertino Icons font to your application.
   # Use with the CupertinoIcons class for iOS style icons.
@@ -36,6 +37,7 @@ dev_dependencies:
   build_runner: ^1.7.4
   chopper_generator: ^3.0.3
   lint: ^1.1.1
+  sum_types_generator: ^0.2.1+2
 
 
 # For information on the generic Dart part of this file, see the
@@ -54,6 +56,8 @@ flutter:
   #  - images/a_dot_burr.jpeg
   #  - images/a_dot_ham.jpeg
 
+  assets:
+    - assets/images
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware.
 

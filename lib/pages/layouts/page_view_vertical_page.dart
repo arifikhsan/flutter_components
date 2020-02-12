@@ -11,17 +11,15 @@ class PageViewVerticalPage extends StatelessWidget {
         physics: BouncingScrollPhysics(),
         scrollDirection: Axis.vertical,
         children: <Widget>[
-          Container(
-            child: Card(
-              margin: EdgeInsets.all(16),
-              color: Colors.blue,
-              child: Align(
-                child: Text(
-                  'Card 1',
-                  style: TextStyle(
-                    color: Colors.white,
-                    fontSize: 24,
-                  ),
+          Card(
+            margin: const EdgeInsets.all(16),
+            color: Colors.blue,
+            child: Align(
+              child: Text(
+                'Card 1',
+                style: TextStyle(
+                  color: Colors.white,
+                  fontSize: 24,
                 ),
               ),
             ),

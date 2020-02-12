@@ -46,10 +46,8 @@ class AppbarPage extends StatelessWidget {
           })
         ],
       ),
-      body: Center(
-        child: Container(
-          child: Text('Appbar'),
-        ),
+      body: const Center(
+        child: Text('Appbar'),
       ),
     );
   }
