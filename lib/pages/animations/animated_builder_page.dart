@@ -34,6 +34,12 @@ class _AnimatedBuilderPageState extends State<AnimatedBuilderPage>
       body: Center(
         child: AnimatedBuilder(
           animation: _controller,
+          builder: (BuildContext context, Widget child) {
+            return Transform.rotate(
+              angle: _controller.value * 2.0 * math.pi,
+              child: child,
+            );
+          },
           child: Container(
             width: 200.0,
             height: 200.0,
@@ -42,12 +48,6 @@ class _AnimatedBuilderPageState extends State<AnimatedBuilderPage>
               child: Text('Wee'),
             ),
           ),
-          builder: (BuildContext context, Widget child) {
-            return Transform.rotate(
-              angle: _controller.value * 2.0 * math.pi,
-              child: child,
-            );
-          },
         ),
       ),
     );

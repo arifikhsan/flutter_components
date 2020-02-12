@@ -9,7 +9,7 @@ class ImagePage extends StatelessWidget {
       ),
       body: Column(
         children: <Widget>[
-          Image.asset('vegetable.jpg'),
+          Image.asset('assets/images/vegetable.jpg'),
           const FlutterLogo(
             size: 64,
           ),
