@@ -26,24 +26,24 @@ class UselesslyNestedWidget extends StatelessWidget {
     return Column(
       children: <Widget>[
         RaisedButton(
-          child: const Text('Show Default'),
           onPressed: () => showDefaultsnackbar(context),
+          child: const Text('Show Default'),
         ),
         RaisedButton(
-          child: const Text('Show Simple Flushbar'),
           onPressed: () => showSimpleFlushbar(context),
+          child: const Text('Show Simple Flushbar'),
         ),
         RaisedButton(
-          child: const Text('Show Info Flushbar'),
           onPressed: () => showInfoFlushbar(context),
+          child: const Text('Show Info Flushbar'),
         ),
         RaisedButton(
-          child: const Text('Show Flushbar via Helper'),
           onPressed: () => showInfoFlushbarHelper(context),
+          child: const Text('Show Flushbar via Helper'),
         ),
         RaisedButton(
-          child: const Text('Show Floating Styled Flushbar'),
           onPressed: () => showFloatingFlushbar(context),
+          child: const Text('Show Floating Styled Flushbar'),
         ),
       ],
     );
@@ -66,13 +66,13 @@ class UselesslyNestedWidget extends StatelessWidget {
       message: 'Hello from a Flushbar',
       duration: const Duration(seconds: 3),
       mainButton: FlatButton(
+        onPressed: () {},
         child: Text(
           'Click Me',
           style: TextStyle(
             color: Theme.of(context).accentColor,
           ),
         ),
-        onPressed: () {},
       ),
     )..show(context);
   }

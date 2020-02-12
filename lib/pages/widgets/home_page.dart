@@ -14,7 +14,7 @@ class HomePage extends StatelessWidget {
           child: ListView(
             children: <Widget>[
               ListTile(
-                title: Text(
+                title: const Text(
                   'Reorderable List View',
                   style: TextStyle(color: Colors.blue),
                 ),
@@ -23,7 +23,7 @@ class HomePage extends StatelessWidget {
                 },
               ),
               ListTile(
-                title: Text(
+                title: const Text(
                   'Image Page',
                   style: TextStyle(color: Colors.blue),
                 ),
@@ -32,7 +32,7 @@ class HomePage extends StatelessWidget {
                 },
               ),
               ListTile(
-                title: Text(
+                title: const Text(
                   'Inherited Widget',
                   style: TextStyle(color: Colors.blue),
                 ),
@@ -41,7 +41,7 @@ class HomePage extends StatelessWidget {
                 },
               ),
               ListTile(
-                title: Text(
+                title: const Text(
                   'Animation',
                   style: TextStyle(color: Colors.blue),
                 ),
@@ -50,7 +50,7 @@ class HomePage extends StatelessWidget {
                 },
               ),
               ListTile(
-                title: Text(
+                title: const Text(
                   'Animated Cross Fade',
                   style: TextStyle(color: Colors.blue),
                 ),
@@ -59,7 +59,7 @@ class HomePage extends StatelessWidget {
                 },
               ),
               ListTile(
-                title: Text(
+                title: const Text(
                   'Animated Container',
                   style: TextStyle(color: Colors.blue),
                 ),
@@ -68,7 +68,7 @@ class HomePage extends StatelessWidget {
                 },
               ),
               ListTile(
-                title: Text(
+                title: const Text(
                   'Animated Builder',
                   style: TextStyle(color: Colors.blue),
                 ),
@@ -77,7 +77,7 @@ class HomePage extends StatelessWidget {
                 },
               ),
               ListTile(
-                title: Text(
+                title: const Text(
                   'Animated Widget',
                   style: TextStyle(color: Colors.blue),
                 ),
@@ -86,7 +86,7 @@ class HomePage extends StatelessWidget {
                 },
               ),
               ListTile(
-                title: Text(
+                title: const Text(
                   'Shared Preferences',
                   style: TextStyle(color: Colors.blue),
                 ),
@@ -95,7 +95,7 @@ class HomePage extends StatelessWidget {
                 },
               ),
               ListTile(
-                title: Text(
+                title: const Text(
                   'Future Builder',
                   style: TextStyle(color: Colors.blue),
                 ),
@@ -104,7 +104,7 @@ class HomePage extends StatelessWidget {
                 },
               ),
               ListTile(
-                title: Text(
+                title: const Text(
                   'Chopper',
                   style: TextStyle(color: Colors.blue),
                 ),
@@ -113,7 +113,7 @@ class HomePage extends StatelessWidget {
                 },
               ),
               ListTile(
-                title: Text(
+                title: const Text(
                   'Dialog',
                   style: TextStyle(color: Colors.blue),
                 ),
@@ -122,7 +122,7 @@ class HomePage extends StatelessWidget {
                 },
               ),
               ListTile(
-                title: Text(
+                title: const Text(
                   'Flushbar',
                   style: TextStyle(color: Colors.blue),
                 ),
@@ -131,7 +131,7 @@ class HomePage extends StatelessWidget {
                 },
               ),
               ListTile(
-                title: Text(
+                title: const Text(
                   'Snackbar',
                   style: TextStyle(color: Colors.blue),
                 ),
@@ -140,7 +140,7 @@ class HomePage extends StatelessWidget {
                 },
               ),
               ListTile(
-                title: Text(
+                title: const Text(
                   'Bottom Tabbar',
                   style: TextStyle(color: Colors.blue),
                 ),
@@ -149,7 +149,7 @@ class HomePage extends StatelessWidget {
                 },
               ),
               ListTile(
-                title: Text(
+                title: const Text(
                   'Tabbar',
                   style: TextStyle(color: Colors.blue),
                 ),
@@ -158,7 +158,7 @@ class HomePage extends StatelessWidget {
                 },
               ),
               ListTile(
-                title: Text(
+                title: const Text(
                   'Opacity Animations',
                   style: TextStyle(color: Colors.blue),
                 ),
@@ -167,7 +167,7 @@ class HomePage extends StatelessWidget {
                 },
               ),
               ListTile(
-                title: Text(
+                title: const Text(
                   'Counter Bloc',
                   style: TextStyle(color: Colors.blue),
                 ),
@@ -176,7 +176,7 @@ class HomePage extends StatelessWidget {
                 },
               ),
               ListTile(
-                title: Text(
+                title: const Text(
                   'Sliver Appbar',
                   style: TextStyle(color: Colors.blue),
                 ),
@@ -185,7 +185,7 @@ class HomePage extends StatelessWidget {
                 },
               ),
               ListTile(
-                title: Text(
+                title: const Text(
                   'Appbar',
                   style: TextStyle(color: Colors.blue),
                 ),
@@ -194,7 +194,7 @@ class HomePage extends StatelessWidget {
                 },
               ),
               ListTile(
-                title: Text(
+                title: const Text(
                   'Sizedbox',
                   style: TextStyle(color: Colors.blue),
                 ),
@@ -203,7 +203,7 @@ class HomePage extends StatelessWidget {
                 },
               ),
               ListTile(
-                title: Text(
+                title: const Text(
                   'Clip',
                   style: TextStyle(color: Colors.blue),
                 ),

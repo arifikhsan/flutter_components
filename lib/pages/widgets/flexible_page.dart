@@ -5,10 +5,10 @@ class FlexiblePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Flexible'),
+        title: const Text('Flexible'),
       ),
       body: Container(
-        margin: EdgeInsets.all(8),
+        margin: const EdgeInsets.all(8),
         child: Column(
           mainAxisSize: MainAxisSize.max,
           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
@@ -17,12 +17,13 @@ class FlexiblePage extends StatelessWidget {
             Flexible(
               flex: 2,
               child: Container(
-                margin: EdgeInsets.all(8),
+                margin: const EdgeInsets.all(8),
                 child: ClipRRect(
-                  borderRadius: BorderRadius.all(Radius.circular(4)),
+                  borderRadius: const BorderRadius.all(Radius.circular(4)),
                   child: Container(
                     color: Colors.cyan,
                     child: Column(
+                      mainAxisAlignment: MainAxisAlignment.center,
                       children: <Widget>[
                         Text(
                           '1/3',
@@ -52,12 +53,13 @@ class FlexiblePage extends StatelessWidget {
             Flexible(
               flex: 3,
               child: Container(
-                margin: EdgeInsets.all(8),
+                margin: const EdgeInsets.all(8),
                 child: ClipRRect(
-                  borderRadius: BorderRadius.all(Radius.circular(4)),
+                  borderRadius: const BorderRadius.all(Radius.circular(4)),
                   child: Container(
                     color: Colors.teal,
                     child: Column(
+                      mainAxisAlignment: MainAxisAlignment.center,
                       children: <Widget>[
                         Text(
                           '1/2',
@@ -87,12 +89,13 @@ class FlexiblePage extends StatelessWidget {
             Flexible(
               flex: 1,
               child: Container(
-                margin: EdgeInsets.all(8),
+                margin: const EdgeInsets.all(8),
                 child: ClipRRect(
-                  borderRadius: BorderRadius.all(Radius.circular(4)),
+                  borderRadius: const BorderRadius.all(Radius.circular(4)),
                   child: Container(
                     color: Colors.indigo,
                     child: Column(
+                      mainAxisAlignment: MainAxisAlignment.center,
                       children: <Widget>[
                         Text(
                           '1/6',

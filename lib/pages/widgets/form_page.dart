@@ -42,7 +42,7 @@ class _FormPageState extends State<FormPage> {
                     name = value;
                   },
                   decoration: InputDecoration(
-                    border: UnderlineInputBorder(),
+                    border: const UnderlineInputBorder(),
                     hintText: 'What do people call you?',
                     labelText: 'Name',
                     filled: true,
@@ -67,12 +67,12 @@ class _FormPageState extends State<FormPage> {
                   },
                   inputFormatters: [WhitelistingTextInputFormatter.digitsOnly],
                 ),
-                SizedBox(
+                const SizedBox(
                   height: 16,
                 ),
                 TextFormField(
                   decoration: InputDecoration(
-                    border: UnderlineInputBorder(),
+                    border: const UnderlineInputBorder(),
                     filled: true,
                     icon: Icon(Icons.email),
                     hintText: 'Your email address',
@@ -83,12 +83,12 @@ class _FormPageState extends State<FormPage> {
                     email = value;
                   },
                 ),
-                SizedBox(
+                const SizedBox(
                   height: 16,
                 ),
                 TextFormField(
                   decoration: InputDecoration(
-                    border: OutlineInputBorder(),
+                    border: const OutlineInputBorder(),
                     icon: Icon(Icons.phone),
                     hintText: 'Tell us about yourself',
                     helperText: 'Keep it short, this is just a demo',
@@ -99,18 +99,18 @@ class _FormPageState extends State<FormPage> {
                     lifeStory = value;
                   },
                 ),
-                SizedBox(
+                const SizedBox(
                   height: 16,
                 ),
                 TextFormField(
                   keyboardType: TextInputType.number,
                   decoration: InputDecoration(
-                    border: OutlineInputBorder(),
+                    border: const OutlineInputBorder(),
                     labelText: 'Salary',
                     prefixText: '\$',
                     suffixText: 'USD',
                     suffixStyle: TextStyle(color: Colors.green),
-                    prefixStyle: TextStyle(color: Colors.blue),
+                    prefixStyle: const TextStyle(color: Colors.blue),
                   ),
                   maxLines: 1,
                   onChanged: (String value) {
