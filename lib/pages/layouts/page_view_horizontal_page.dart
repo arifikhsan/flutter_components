@@ -13,7 +13,7 @@ class PageViewHorizontalPage extends StatelessWidget {
         children: <Widget>[
           Container(
             child: Card(
-              margin: EdgeInsets.all(16),
+              margin: const EdgeInsets.all(16),
               color: Colors.blue,
               child: Align(
                 child: Text(
@@ -28,7 +28,7 @@ class PageViewHorizontalPage extends StatelessWidget {
           ),
           Container(
             child: Card(
-              margin: EdgeInsets.all(16),
+              margin: const EdgeInsets.all(16),
               color: Colors.red,
               child: Align(
                 child: Text(
@@ -43,7 +43,7 @@ class PageViewHorizontalPage extends StatelessWidget {
           ),
           Container(
             child: Card(
-              margin: EdgeInsets.all(16),
+              margin: const EdgeInsets.all(16),
               color: Colors.green,
               child: Align(
                 child: Text(

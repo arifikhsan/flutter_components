@@ -54,7 +54,7 @@ class _FutureBuilderPageState extends State<FutureBuilderPage> {
                 height: 60,
               ),
               const Padding(
-                padding: EdgeInsets.all(16),
+                padding: const EdgeInsets.all(16),
                 child: Text('Awaiting reslut...'),
               ),
             ];

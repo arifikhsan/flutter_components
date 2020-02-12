@@ -10,7 +10,7 @@ class ClipPage extends StatelessWidget {
       body: SingleChildScrollView(
         child: Center(
           child: Container(
-            margin: EdgeInsets.all(16),
+            margin: const EdgeInsets.all(16),
             child: Column(
               children: <Widget>[
                 ClipRRect(

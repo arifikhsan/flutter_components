@@ -5,19 +5,19 @@ class CardPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Card'),
+        title: const Text('Card'),
       ),
       body: SingleChildScrollView(
         child: Column(
           children: <Widget>[
             Container(
               width: double.infinity,
-              margin: EdgeInsets.all(16),
+              margin: const EdgeInsets.all(16),
               child: Card(
                 color: Colors.red,
                 elevation: 8,
                 child: Container(
-                  padding: EdgeInsets.all(16),
+                  padding: const EdgeInsets.all(16),
                   child: Text(
                     'Card Hello World',
                     style: TextStyle(color: Colors.white),
@@ -27,7 +27,7 @@ class CardPage extends StatelessWidget {
               ),
             ),
             Container(
-              margin: EdgeInsets.all(16),
+              margin: const EdgeInsets.all(16),
               width: double.infinity,
               child: Card(
                 color: Colors.orange,
@@ -35,7 +35,7 @@ class CardPage extends StatelessWidget {
                   splashColor: Colors.green,
                   onTap: () {},
                   child: Container(
-                    padding: EdgeInsets.all(16),
+                    padding: const EdgeInsets.all(16),
                     child: Text(
                       'Ripple Card',
                       style: TextStyle(color: Colors.white),
@@ -47,16 +47,18 @@ class CardPage extends StatelessWidget {
             ),
             Container(
               width: double.infinity,
-              margin: EdgeInsets.all(16),
+              margin: const EdgeInsets.all(16),
               child: Card(
                 color: Colors.purple,
-                shape: RoundedRectangleBorder(
-                    borderRadius: BorderRadius.only(
-                        topLeft: Radius.circular(16),
-                        bottomRight: Radius.circular(16),
-                        topRight: Radius.elliptical(80, 80))),
+                shape: const RoundedRectangleBorder(
+                  borderRadius: BorderRadius.only(
+                    topLeft: Radius.circular(16),
+                    bottomRight: Radius.circular(16),
+                    topRight: Radius.elliptical(80, 80),
+                  ),
+                ),
                 child: Container(
-                  padding: EdgeInsets.all(16),
+                  padding: const EdgeInsets.all(16),
                   child: Text(
                     'Rounded Card',
                     style: TextStyle(
@@ -68,14 +70,16 @@ class CardPage extends StatelessWidget {
             ),
             Container(
               width: double.infinity,
-              margin: EdgeInsets.all(16),
+              margin: const EdgeInsets.all(16),
               child: Card(
                 color: Colors.purple,
-                shape: RoundedRectangleBorder(
-                    borderRadius: BorderRadius.only(
-                        bottomRight: Radius.elliptical(80, 40))),
+                shape: const RoundedRectangleBorder(
+                  borderRadius: BorderRadius.only(
+                    bottomRight: Radius.elliptical(80, 40),
+                  ),
+                ),
                 child: Container(
-                  padding: EdgeInsets.all(16),
+                  padding: const EdgeInsets.all(16),
                   child: Text(
                     'Elliptical Card',
                     style: TextStyle(
@@ -87,7 +91,7 @@ class CardPage extends StatelessWidget {
             ),
             Container(
               width: double.infinity,
-              margin: EdgeInsets.all(16),
+              margin: const EdgeInsets.all(16),
               child: Card(
                 child: Column(
                   children: <Widget>[
@@ -107,11 +111,13 @@ class CardPage extends StatelessWidget {
                             child: FittedBox(
                               fit: BoxFit.scaleDown,
                               alignment: Alignment.centerLeft,
-                              child: Text('Complex Card',
-                                  style: TextStyle(
-                                    color: Colors.white,
-                                    fontSize: 24,
-                                  )),
+                              child: Text(
+                                'Complex Card',
+                                style: TextStyle(
+                                  color: Colors.white,
+                                  fontSize: 24,
+                                ),
+                              ),
                             ),
                           ),
                         ],
@@ -120,12 +126,12 @@ class CardPage extends StatelessWidget {
                     ButtonBar(
                       children: <Widget>[
                         FlatButton(
-                          child: Text('SHARE'),
                           onPressed: () {},
+                          child: const Text('SHARE'),
                         ),
                         FlatButton(
-                          child: Text('EXPLORE'),
                           onPressed: () {},
+                          child: const Text('EXPLORE'),
                         )
                       ],
                     )
@@ -134,7 +140,7 @@ class CardPage extends StatelessWidget {
               ),
             ),
             Container(
-              padding: EdgeInsets.all(16),
+              padding: const EdgeInsets.all(16),
               child: Card(
                 child: Column(
                   mainAxisSize: MainAxisSize.min,
@@ -148,12 +154,12 @@ class CardPage extends StatelessWidget {
                     ButtonBar(
                       children: <Widget>[
                         FlatButton(
-                          child: const Text('BUY TICKETS'),
                           onPressed: () {},
+                          child: const Text('BUY TICKETS'),
                         ),
                         FlatButton(
-                          child: const Text('LISTEN'),
                           onPressed: () {},
+                          child: const Text('LISTEN'),
                         ),
                       ],
                     ),

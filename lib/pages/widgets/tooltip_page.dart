@@ -5,17 +5,17 @@ class TooltipPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Tooltip'),
+        title: const Text('Tooltip'),
       ),
       body: Container(
-        margin: EdgeInsets.all(8),
+        margin: const EdgeInsets.all(8),
         child: Row(
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
             Tooltip(
               message: 'Default tooltip',
               child: Container(
-                margin: EdgeInsets.all(8),
+                margin: const EdgeInsets.all(8),
                 color: Colors.blue,
                 width: 100,
                 height: 100,
@@ -34,7 +34,7 @@ class TooltipPage extends StatelessWidget {
               message: 'Default tooltip',
               verticalOffset: 50,
               child: Container(
-                margin: EdgeInsets.all(8),
+                margin: const EdgeInsets.all(8),
                 color: Colors.green,
                 width: 100,
                 height: 100,
@@ -54,7 +54,7 @@ class TooltipPage extends StatelessWidget {
               height: 50,
               verticalOffset: 50,
               child: Container(
-                margin: EdgeInsets.all(8),
+                margin: const EdgeInsets.all(8),
                 color: Colors.red,
                 width: 100,
                 height: 100,

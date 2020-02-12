@@ -9,7 +9,7 @@ class ListViewBuilderTwoPage extends StatelessWidget {
         ),
         body: ListView.builder(
           itemCount: 20,
-          padding: EdgeInsets.all(16),
+          padding: const EdgeInsets.all(16),
           itemBuilder: (BuildContext context, int index) {
             return Column(
               children: <Widget>[
@@ -23,7 +23,7 @@ class ListViewBuilderTwoPage extends StatelessWidget {
                   ),
                   trailing: Icon(Icons.dashboard),
                 ),
-                Divider(),
+                const Divider(),
               ],
             );
           },

@@ -8,7 +8,7 @@ class SizedboxPage extends StatelessWidget {
         title: Text('Sizedbox'),
       ),
       body: Container(
-        margin: EdgeInsets.all(16),
+        margin: const EdgeInsets.all(16),
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[

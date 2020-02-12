@@ -13,7 +13,7 @@ class ContainerPage extends StatelessWidget {
             crossAxisAlignment: CrossAxisAlignment.center,
             children: <Widget>[
               Container(
-                margin: EdgeInsets.all(16),
+                margin: const EdgeInsets.all(16),
                 color: Colors.blue,
                 child: Text(
                   'container',
@@ -23,8 +23,8 @@ class ContainerPage extends StatelessWidget {
                 ),
               ),
               Container(
-                margin: EdgeInsets.all(16),
-                padding: EdgeInsets.all(16),
+                margin: const EdgeInsets.all(16),
+                padding: const EdgeInsets.all(16),
                 color: Colors.blue,
                 child: Text(
                   'Container with padding',
@@ -34,8 +34,8 @@ class ContainerPage extends StatelessWidget {
                 ),
               ),
               Container(
-                margin: EdgeInsets.all(16),
-                padding: EdgeInsets.all(16),
+                margin: const EdgeInsets.all(16),
+                padding: const EdgeInsets.all(16),
                 decoration: BoxDecoration(
                   shape: BoxShape.rectangle,
                   color: Colors.yellow,
@@ -52,8 +52,8 @@ class ContainerPage extends StatelessWidget {
                 ),
               ),
               Container(
-                margin: EdgeInsets.all(16),
-                padding: EdgeInsets.all(16),
+                margin: const EdgeInsets.all(16),
+                padding: const EdgeInsets.all(16),
                 decoration: BoxDecoration(
                   color: Colors.green,
                   shape: BoxShape.circle,
@@ -67,8 +67,8 @@ class ContainerPage extends StatelessWidget {
                 ),
               ),
               Container(
-                margin: EdgeInsets.all(16),
-                padding: EdgeInsets.all(16),
+                margin: const EdgeInsets.all(16),
+                padding: const EdgeInsets.all(16),
                 color: Colors.blue,
                 width: 100,
                 height: 150,
@@ -80,8 +80,8 @@ class ContainerPage extends StatelessWidget {
                 ),
               ),
               Container(
-                margin: EdgeInsets.all(16),
-                padding: EdgeInsets.all(16),
+                margin: const EdgeInsets.all(16),
+                padding: const EdgeInsets.all(16),
                 color: Colors.blue,
                 transform: Matrix4.rotationZ(0.5),
                 child: Text(
@@ -93,8 +93,8 @@ class ContainerPage extends StatelessWidget {
               ),
               Divider(),
               Container(
-                margin: EdgeInsets.all(16),
-                padding: EdgeInsets.all(16),
+                margin: const EdgeInsets.all(16),
+                padding: const EdgeInsets.all(16),
                 color: Colors.blue,
                 child: Text(
                   'Boring container',

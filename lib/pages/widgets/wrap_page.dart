@@ -5,10 +5,10 @@ class WrapPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Wrap'),
+        title: const Text('Wrap'),
       ),
       body: Container(
-        margin: EdgeInsets.all(16),
+        margin: const EdgeInsets.all(16),
         child: Wrap(
           spacing: 8,
           runSpacing: 2,

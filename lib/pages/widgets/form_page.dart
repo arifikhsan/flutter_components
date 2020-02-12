@@ -28,7 +28,7 @@ class _FormPageState extends State<FormPage> {
           FocusScope.of(context).unfocus();
         },
         child: Container(
-          padding: EdgeInsets.all(16),
+          padding: const EdgeInsets.all(16),
           child: Form(
             key: _formKey,
             child: ListView(
@@ -117,7 +117,7 @@ class _FormPageState extends State<FormPage> {
                     salary = value;
                   },
                 ),
-                SizedBox(
+                const SizedBox(
                   height: 16,
                 ),
                 TextFormField(

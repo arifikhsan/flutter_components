@@ -10,13 +10,13 @@ class _TextFieldPageState extends State<TextFieldPage> {
   bool numberInputIsValid = true;
   bool inputShowPassword = false;
 
-  final multilineInputController = TextEditingController();
+  final TextEditingController multilineInputController = TextEditingController();
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Text field'),
+        title: const Text('Text field'),
       ),
       body: GestureDetector(
         onTap: () {
@@ -26,13 +26,13 @@ class _TextFieldPageState extends State<TextFieldPage> {
           margin: const EdgeInsets.all(8.0),
           child: ListView(
             children: <Widget>[
-              Text('Number input field'),
+              const Text('Number input field'),
               TextField(
                 keyboardType: TextInputType.number,
                 decoration: InputDecoration(
                   labelText: 'Enter an integer: ',
                   icon: Icon(Icons.attach_money),
-                  border: OutlineInputBorder(
+                  border: const OutlineInputBorder(
                     borderRadius: BorderRadius.all(Radius.circular(8)),
                   ),
                   errorText:
@@ -42,7 +42,7 @@ class _TextFieldPageState extends State<TextFieldPage> {
                   Fluttertoast.showToast(msg: 'You entered: $value');
                 },
                 onChanged: (String value) {
-                  final valueInteger = int.tryParse(value);
+                  final int valueInteger = int.tryParse(value);
                   debugPrint('parsed value: $valueInteger');
                   setState(() {
                     if (valueInteger == null) {
@@ -50,27 +50,27 @@ class _TextFieldPageState extends State<TextFieldPage> {
                     } else {
                       numberInputIsValid = true;
                     }
-                  });
+                  },);
                 },
               ),
-              SizedBox(height: 50),
-              Text('Multiline Input Field'),
+              const SizedBox(height: 50),
+              const Text('Multiline Input Field'),
               TextField(
                 controller: multilineInputController,
                 maxLines: 10,
                 textCapitalization: TextCapitalization.sentences,
                 decoration: InputDecoration(
                     counterText:
-                        '${this.multilineInputController.text.split(' ').length}',
+                        '${multilineInputController.text.split(' ').length}',
                     labelText: 'Enter multiline text',
                     hintText: 'type something ...',
-                    border: OutlineInputBorder()),
+                    border: const OutlineInputBorder()),
                 onChanged: (_) {
                   setState(() {});
                 },
               ),
-              SizedBox(height: 50),
-              Text('Password input field'),
+              const SizedBox(height: 50),
+              const Text('Password input field'),
               TextField(
                 obscureText: inputShowPassword,
                 decoration: InputDecoration(
@@ -88,9 +88,9 @@ class _TextFieldPageState extends State<TextFieldPage> {
                   ),
                 ),
               ),
-              SizedBox(height: 50),
-              Text('Borderless input'),
-              TextField(
+              const SizedBox(height: 50),
+              const Text('Borderless input'),
+              const TextField(
                 maxLines: 3,
                 decoration: InputDecoration.collapsed(
                   hintText: 'borderless input',

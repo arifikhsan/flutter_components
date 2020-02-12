@@ -11,7 +11,7 @@ class AlignPage extends StatelessWidget {
         child: Column(
           children: <Widget>[
             Container(
-              margin: EdgeInsets.all(16),
+              margin: const EdgeInsets.all(16),
               color: Colors.blue,
               width: MediaQuery.of(context).size.width,
               height: 300,
@@ -26,7 +26,7 @@ class AlignPage extends StatelessWidget {
               ),
             ),
             Container(
-              margin: EdgeInsets.all(16),
+              margin: const EdgeInsets.all(16),
               color: Colors.blue,
               width: MediaQuery.of(context).size.width,
               height: 300,
@@ -42,7 +42,7 @@ class AlignPage extends StatelessWidget {
               ),
             ),
             Container(
-              margin: EdgeInsets.all(16),
+              margin: const EdgeInsets.all(16),
               color: Colors.blue,
               width: MediaQuery.of(context).size.width,
               height: 300,
@@ -58,7 +58,7 @@ class AlignPage extends StatelessWidget {
               ),
             ),
             Container(
-              margin: EdgeInsets.all(16),
+              margin: const EdgeInsets.all(16),
               color: Colors.blue,
               width: MediaQuery.of(context).size.width,
               height: 300,
@@ -74,7 +74,7 @@ class AlignPage extends StatelessWidget {
               ),
             ),
             Container(
-              margin: EdgeInsets.all(16),
+              margin: const EdgeInsets.all(16),
               color: Colors.blue,
               width: MediaQuery.of(context).size.width,
               height: 300,
@@ -90,7 +90,7 @@ class AlignPage extends StatelessWidget {
               ),
             ),
             Container(
-              margin: EdgeInsets.all(16),
+              margin: const EdgeInsets.all(16),
               color: Colors.blue,
               width: MediaQuery.of(context).size.width,
               height: 300,
@@ -106,7 +106,7 @@ class AlignPage extends StatelessWidget {
               ),
             ),
             Container(
-              margin: EdgeInsets.all(16),
+              margin: const EdgeInsets.all(16),
               color: Colors.blue,
               width: MediaQuery.of(context).size.width,
               height: 300,
@@ -122,7 +122,7 @@ class AlignPage extends StatelessWidget {
               ),
             ),
             Container(
-              margin: EdgeInsets.all(16),
+              margin: const EdgeInsets.all(16),
               color: Colors.blue,
               width: MediaQuery.of(context).size.width,
               height: 300,
@@ -138,7 +138,7 @@ class AlignPage extends StatelessWidget {
               ),
             ),
             Container(
-              margin: EdgeInsets.all(16),
+              margin: const EdgeInsets.all(16),
               color: Colors.blue,
               width: MediaQuery.of(context).size.width,
               height: 300,
@@ -154,7 +154,7 @@ class AlignPage extends StatelessWidget {
               ),
             ),
             Container(
-              margin: EdgeInsets.all(16),
+              margin: const EdgeInsets.all(16),
               color: Colors.blue,
               width: MediaQuery.of(context).size.width,
               height: 300,
