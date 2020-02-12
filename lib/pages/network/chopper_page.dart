@@ -8,7 +8,7 @@ class ChopperPage extends StatelessWidget {
   void apa() async {
     final PostApiService a = PostApiService.create();
     posts = await a.getPosts();
-    print(posts.body);
+    // print(posts.body);
   }
 
   @override

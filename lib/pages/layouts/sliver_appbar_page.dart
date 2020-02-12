@@ -15,7 +15,7 @@ class _SliverAppbarPageState extends State<SliverAppbarPage> {
     return Scaffold(
       body: CustomScrollView(
         slivers: <Widget>[
-          SliverAppBar(
+          const SliverAppBar(
             expandedHeight: 150,
             flexibleSpace: FlexibleSpaceBar(
               title: Text(
@@ -36,56 +36,56 @@ class _SliverAppbarPageState extends State<SliverAppbarPage> {
                     color: Colors.red,
                     width: 200,
                     height: 200,
-                    child: Text('Hello'),
+                    child: const Text('Hello'),
                   ),
                   Container(
                     margin: const EdgeInsets.all(16),
                     color: Colors.red,
                     width: 200,
                     height: 200,
-                    child: Text('Hello'),
+                    child: const Text('Hello'),
                   ),
                   Container(
                     margin: const EdgeInsets.all(16),
                     color: Colors.red,
                     width: 200,
                     height: 200,
-                    child: Text('Hello'),
+                    child: const Text('Hello'),
                   ),
                   Container(
                     margin: const EdgeInsets.all(16),
                     color: Colors.red,
                     width: 200,
                     height: 200,
-                    child: Text('Hello'),
+                    child: const Text('Hello'),
                   ),
                   Container(
                     margin: const EdgeInsets.all(16),
                     color: Colors.red,
                     width: 200,
                     height: 200,
-                    child: Text('Hello'),
+                    child: const Text('Hello'),
                   ),
                   Container(
                     margin: const EdgeInsets.all(16),
                     color: Colors.red,
                     width: 200,
                     height: 200,
-                    child: Text('Hello'),
+                    child: const Text('Hello'),
                   ),
                   Container(
                     margin: const EdgeInsets.all(16),
                     color: Colors.red,
                     width: 200,
                     height: 200,
-                    child: Text('Hello'),
+                    child: const Text('Hello'),
                   ),
                   Container(
                     margin: const EdgeInsets.all(16),
                     color: Colors.red,
                     width: 200,
                     height: 200,
-                    child: Text('Hello'),
+                    child: const Text('Hello'),
                   ),
                 ],
               ),
@@ -98,12 +98,12 @@ class _SliverAppbarPageState extends State<SliverAppbarPage> {
           children: <Widget>[
             Row(
               children: <Widget>[
-                Text('Pinned'),
+                const Text('Pinned'),
                 Switch(
-                  value: this.pinned,
+                  value: pinned,
                   onChanged: (bool value) {
                     setState(() {
-                      this.pinned = value;
+                      pinned = value;
                     });
                   },
                 ),
@@ -111,12 +111,12 @@ class _SliverAppbarPageState extends State<SliverAppbarPage> {
             ),
             Row(
               children: <Widget>[
-                Text('Snap'),
+                const Text('Snap'),
                 Switch(
-                  value: this.snap,
+                  value: snap,
                   onChanged: (bool value) {
                     setState(() {
-                      this.snap = value;
+                      snap = value;
                     });
                   },
                 ),
@@ -124,12 +124,12 @@ class _SliverAppbarPageState extends State<SliverAppbarPage> {
             ),
             Row(
               children: <Widget>[
-                Text('Floating'),
+                const Text('Floating'),
                 Switch(
-                  value: this.floating,
+                  value: floating,
                   onChanged: (bool value) {
                     setState(() {
-                      this.floating = value;
+                      floating = value;
                     });
                   },
                 ),

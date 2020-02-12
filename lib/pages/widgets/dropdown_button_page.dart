@@ -23,8 +23,8 @@ class _DropdownButtonPageState extends State<DropdownButtonPage> {
           Column(
             children: <Widget>[
               ListTile(
-                title: Text('Dropdown'),
-                subtitle: Text('With default value'),
+                title: const Text('Dropdown'),
+                subtitle: const Text('With default value'),
                 trailing: DropdownButton(
                   value: dropdownOneSelectedValue,
                   items: menuItems.map((String item) {
@@ -41,8 +41,8 @@ class _DropdownButtonPageState extends State<DropdownButtonPage> {
                 ),
               ),
               ListTile(
-                title: Text('Dropdown'),
-                subtitle: Text('with icon'),
+                title: const Text('Dropdown'),
+                subtitle: const Text('with icon'),
                 trailing: DropdownButton(
                   value: dropdownTwoSelectedValue,
                   items: menuItems.map((String item) {
@@ -54,7 +54,7 @@ class _DropdownButtonPageState extends State<DropdownButtonPage> {
                             Icons.home,
                             color: Colors.blue,
                           ),
-                          SizedBox(
+                          const SizedBox(
                             width: 8,
                           ),
                           Text(item),
@@ -89,8 +89,8 @@ class _DropdownButtonPageState extends State<DropdownButtonPage> {
                 ),
               ),
               ListTile(
-                title: Text('Pop up menu button'),
-                subtitle: Text('subtitle'),
+                title: const Text('Pop up menu button'),
+                subtitle: const Text('subtitle'),
                 trailing: PopupMenuButton(
                   itemBuilder: (_) => menuItems.map((String value) {
                     return PopupMenuItem(
@@ -109,10 +109,10 @@ class _DropdownButtonPageState extends State<DropdownButtonPage> {
           ),
           Column(
             children: <Widget>[
-              Text("value of dropdown one: $dropdownOneSelectedValue"),
-              Text("value of dropdown two: $dropdownTwoSelectedValue"),
-              Text("value of dropdown three: $dropdownThreeSelectedValue"),
-              Text("value of dropdown four: $dropdownFourSelectedValue"),
+              Text('value of dropdown one: $dropdownOneSelectedValue'),
+              Text('value of dropdown two: $dropdownTwoSelectedValue'),
+              Text('value of dropdown three: $dropdownThreeSelectedValue'),
+              Text('value of dropdown four: $dropdownFourSelectedValue'),
             ],
           )
         ],

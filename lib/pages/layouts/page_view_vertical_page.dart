@@ -5,10 +5,10 @@ class PageViewVerticalPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Page View Vertical'),
+        title: const Text('Page View Vertical'),
       ),
       body: PageView(
-        physics: BouncingScrollPhysics(),
+        physics: const BouncingScrollPhysics(),
         scrollDirection: Axis.vertical,
         children: <Widget>[
           Card(
@@ -24,32 +24,28 @@ class PageViewVerticalPage extends StatelessWidget {
               ),
             ),
           ),
-          Container(
-            child: Card(
-              margin: const EdgeInsets.all(16),
-              color: Colors.red,
-              child: Align(
-                child: Text(
-                  'Card 2',
-                  style: TextStyle(
-                    color: Colors.white,
-                    fontSize: 24,
-                  ),
+          Card(
+            margin: const EdgeInsets.all(16),
+            color: Colors.red,
+            child: Align(
+              child: Text(
+                'Card 2',
+                style: TextStyle(
+                  color: Colors.white,
+                  fontSize: 24,
                 ),
               ),
             ),
           ),
-          Container(
-            child: Card(
-              margin: const EdgeInsets.all(16),
-              color: Colors.green,
-              child: Align(
-                child: Text(
-                  'Card 3',
-                  style: TextStyle(
-                    color: Colors.white,
-                    fontSize: 24,
-                  ),
+          Card(
+            margin: const EdgeInsets.all(16),
+            color: Colors.green,
+            child: Align(
+              child: Text(
+                'Card 3',
+                style: TextStyle(
+                  color: Colors.white,
+                  fontSize: 24,
                 ),
               ),
             ),

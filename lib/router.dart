@@ -12,6 +12,7 @@ import 'package:flutter_components/pages/layouts/tabbar_page.dart';
 import 'package:flutter_components/pages/lists/grid_list_page.dart';
 import 'package:flutter_components/pages/lists/list_tile_page.dart';
 import 'package:flutter_components/pages/lists/list_view_builder_two_page.dart';
+import 'package:flutter_components/pages/lists/reorderable_list_page.dart';
 import 'package:flutter_components/pages/network/chopper_page.dart';
 import 'package:flutter_components/pages/persistents/shared_preferences_page.dart';
 import 'package:flutter_components/pages/state/counter_page.dart';
@@ -98,6 +99,7 @@ final Map<String, WidgetBuilder> routes = <String, WidgetBuilder>{
   '/list_view_two': (BuildContext context) => ListViewBuilderTwoPage(),
   '/list_tile': (BuildContext context) => ListTilePage(),
   '/grid_list': (BuildContext context) => GridListPage(),
+  '/reorderable_list': (BuildContext context) => ReorderableListPage(),
 
   // * State Management
   '/bloc': (BuildContext context) => CounterPage(),

@@ -5,10 +5,10 @@ class TextPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Simple Text'),
+        title: const Text('Simple Text'),
       ),
       body: Container(
-        margin: EdgeInsets.all(8),
+        margin: const EdgeInsets.all(8),
         child: Text(
           'Pariatur commodo nulla ipsum duis duis voluptate nostrud culpa laborum sint. Officia sit laboris do excepteur exercitation elit quis laborum aliquip commodo officia irure enim anim. Excepteur dolore eu dolor officia. Ad cillum dolore aliqua anim do sit.',
           style: TextStyle(

@@ -5,7 +5,7 @@ class ClipPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Clip'),
+        title: const Text('Clip'),
       ),
       body: SingleChildScrollView(
         child: Center(
@@ -19,10 +19,10 @@ class ClipPage extends StatelessWidget {
                     color: Colors.green,
                     width: 200,
                     height: 200,
-                    child: FlutterLogo(),
+                    child: const FlutterLogo(),
                   ),
                 ),
-                SizedBox(
+                const SizedBox(
                   height: 16,
                 ),
                 ClipOval(
@@ -30,10 +30,10 @@ class ClipPage extends StatelessWidget {
                     color: Colors.green,
                     width: 200,
                     height: 200,
-                    child: FlutterLogo(),
+                    child: const FlutterLogo(),
                   ),
                 ),
-                SizedBox(
+                const SizedBox(
                   height: 16,
                 ),
                 ClipRect(
@@ -41,7 +41,7 @@ class ClipPage extends StatelessWidget {
                     color: Colors.green,
                     width: 200,
                     height: 200,
-                    child: FlutterLogo(),
+                    child: const FlutterLogo(),
                   ),
                 ),
               ],

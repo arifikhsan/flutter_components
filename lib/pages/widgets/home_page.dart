@@ -15,6 +15,15 @@ class HomePage extends StatelessWidget {
             children: <Widget>[
               ListTile(
                 title: Text(
+                  'Reorderable List View',
+                  style: TextStyle(color: Colors.blue),
+                ),
+                onTap: () {
+                  Navigator.pushNamed(context, '/reorderable_list');
+                },
+              ),
+              ListTile(
+                title: Text(
                   'Image Page',
                   style: TextStyle(color: Colors.blue),
                 ),
