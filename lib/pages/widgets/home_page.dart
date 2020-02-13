@@ -15,6 +15,15 @@ class HomePage extends StatelessWidget {
             children: <Widget>[
               ListTile(
                 title: const Text(
+                  'Hive',
+                  style: TextStyle(color: Colors.blue),
+                ),
+                onTap: () {
+                  Navigator.pushNamed(context, '/hive');
+                },
+              ),
+              ListTile(
+                title: const Text(
                   'ExpansionTile',
                   style: TextStyle(color: Colors.blue),
                 ),
