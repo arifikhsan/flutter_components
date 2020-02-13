@@ -6,7 +6,7 @@ class AnimatedCrossFadePage extends StatefulWidget {
 }
 
 class _AnimatedCrossFadePageState extends State<AnimatedCrossFadePage> {
-  final bool _first = true;
+  // final bool _first = true;
 
   @override
   Widget build(BuildContext context) {
