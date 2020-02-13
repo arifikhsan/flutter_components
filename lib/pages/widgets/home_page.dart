@@ -15,6 +15,15 @@ class HomePage extends StatelessWidget {
             children: <Widget>[
               ListTile(
                 title: const Text(
+                  'Provider',
+                  style: TextStyle(color: Colors.blue),
+                ),
+                onTap: () {
+                  Navigator.pushNamed(context, '/provider');
+                },
+              ),
+              ListTile(
+                title: const Text(
                   'Hive',
                   style: TextStyle(color: Colors.blue),
                 ),

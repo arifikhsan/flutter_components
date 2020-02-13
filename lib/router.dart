@@ -19,6 +19,7 @@ import 'package:flutter_components/pages/persistents/hive_page.dart';
 import 'package:flutter_components/pages/persistents/shared_preferences_page.dart';
 import 'package:flutter_components/pages/state/counter_page.dart';
 import 'package:flutter_components/pages/state/inherited_widget_page.dart';
+import 'package:flutter_components/pages/state/provider_page.dart';
 import 'package:flutter_components/pages/widgets/button_page.dart';
 import 'package:flutter_components/pages/widgets/card_page.dart';
 import 'package:flutter_components/pages/widgets/clip_page.dart';
@@ -107,6 +108,7 @@ final Map<String, WidgetBuilder> routes = <String, WidgetBuilder>{
   // * State Management
   '/bloc': (BuildContext context) => CounterPage(),
   '/inherited_widget': (BuildContext context) => InheritedWidgetPage(),
+  '/provider': (BuildContext context) => ProviderPage(),
 
   // * Animations
   '/opacity_animation': (BuildContext context) => OpacityAnimationPage(),
