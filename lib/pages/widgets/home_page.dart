@@ -14,6 +14,7 @@ class HomePage extends StatelessWidget {
           // child: _buildListTiles(),
           child: ListView(
             children: <Widget>[
+              _buildListTile(context, 'Bottom Sheet', '/bottom_sheet'),
               _buildListTile(context, 'Page Selector', '/page_selector'),
               _buildListTile(
                   context, 'Navigation Drawer', '/navigation_drawer'),

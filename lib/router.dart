@@ -22,6 +22,7 @@ import 'package:flutter_components/pages/persistents/shared_preferences_page.dar
 import 'package:flutter_components/pages/state/counter_page.dart';
 import 'package:flutter_components/pages/state/inherited_widget_page.dart';
 import 'package:flutter_components/pages/state/provider_page.dart';
+import 'package:flutter_components/pages/widgets/bottom_sheet_page.dart';
 import 'package:flutter_components/pages/widgets/button_page.dart';
 import 'package:flutter_components/pages/widgets/card_page.dart';
 import 'package:flutter_components/pages/widgets/clip_page.dart';
@@ -88,6 +89,7 @@ final Map<String, WidgetBuilder> routes = <String, WidgetBuilder>{
   '/dialog': (BuildContext context) => DialogPage(),
   '/future_builder': (BuildContext context) => FutureBuilderPage(),
   '/image': (BuildContext context) => ImagePage(),
+  '/bottom_sheet': (BuildContext context) => BottomSheetPage(),
 
   // * Layouts
   '/page_view_horizontal': (BuildContext context) => PageViewHorizontalPage(),
