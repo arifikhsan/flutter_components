@@ -7,6 +7,7 @@ import 'package:flutter_components/pages/animations/animation_page.dart';
 import 'package:flutter_components/pages/animations/opacity_animation_page.dart';
 import 'package:flutter_components/pages/layouts/appbar_page.dart';
 import 'package:flutter_components/pages/layouts/bottom_tabbar_page.dart';
+import 'package:flutter_components/pages/layouts/navigation_drawer_page.dart';
 import 'package:flutter_components/pages/layouts/sliver_appbar_page.dart';
 import 'package:flutter_components/pages/layouts/tabbar_page.dart';
 import 'package:flutter_components/pages/lists/expansion_tile_page.dart';
@@ -96,6 +97,7 @@ final Map<String, WidgetBuilder> routes = <String, WidgetBuilder>{
   '/tabbar': (BuildContext context) => TabbarPage(),
   '/bottom_tabbar': (BuildContext context) => BottomTabbarPage(),
   '/sliver_appbar': (BuildContext context) => SliverAppbarPage(),
+  '/navigation_drawer': (BuildContext context) => NavigationDrawerPage(),
 
   // * Lists
   '/list_view': (BuildContext context) => ListViewBuilderPage(),

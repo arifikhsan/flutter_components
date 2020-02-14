@@ -13,6 +13,8 @@ class HomePage extends StatelessWidget {
         child: Center(
           child: ListView(
             children: <Widget>[
+              _buildListTile(
+                  context, 'Navigation Drawer', '/navigation_drawer'),
               ListTile(
                 title: const Text(
                   'Provider',
@@ -481,28 +483,26 @@ class HomePage extends StatelessWidget {
                   Navigator.pushNamed(context, '/chip');
                 },
               ),
-              ListTile(
-                title: const Text(
-                  'Page View Horizontal',
-                  style: TextStyle(color: Colors.blue),
-                ),
-                onTap: () {
-                  Navigator.pushNamed(context, '/page_view_horizontal');
-                },
-              ),
-              ListTile(
-                title: const Text(
-                  'Page View Vertical',
-                  style: TextStyle(color: Colors.blue),
-                ),
-                onTap: () {
-                  Navigator.pushNamed(context, '/page_view_vertical');
-                },
-              ),
+              _buildListTile(
+                  context, 'Page View Horizontal', '/page_view_horizontal'),
+              _buildListTile(
+                  context, 'Page View Vertical', '/page_view_vertical'),
             ],
           ),
         ),
       ),
+    );
+  }
+
+  ListTile _buildListTile(BuildContext context, String title, String route) {
+    return ListTile(
+      title: Text(
+        title,
+        style: TextStyle(color: Colors.blue),
+      ),
+      onTap: () {
+        Navigator.pushNamed(context, route);
+      },
     );
   }
 }
