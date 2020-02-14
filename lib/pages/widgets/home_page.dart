@@ -1,10 +1,6 @@
 import 'package:flutter/material.dart';
 
 class HomePage extends StatelessWidget {
-  // final List<Map<String, dynamic>> routes = [
-  //   {'Navigation Drawer': '/navigatoin_drawer'}
-  // ];
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -24,87 +20,19 @@ class HomePage extends StatelessWidget {
               _buildListTile(context, 'Provider', '/provider'),
               _buildListTile(context, 'Hive', '/hive'),
               _buildListTile(context, 'Expansion Tile', '/expansion_tile'),
-              ListTile(
-                title: const Text(
-                  'Reorderable List View',
-                  style: TextStyle(color: Colors.blue),
-                ),
-                onTap: () {
-                  Navigator.pushNamed(context, '/reorderable_list');
-                },
-              ),
-              ListTile(
-                title: const Text(
-                  'Image Page',
-                  style: TextStyle(color: Colors.blue),
-                ),
-                onTap: () {
-                  Navigator.pushNamed(context, '/image');
-                },
-              ),
-              ListTile(
-                title: const Text(
-                  'Inherited Widget',
-                  style: TextStyle(color: Colors.blue),
-                ),
-                onTap: () {
-                  Navigator.pushNamed(context, '/inherited_widget');
-                },
-              ),
-              ListTile(
-                title: const Text(
-                  'Animation',
-                  style: TextStyle(color: Colors.blue),
-                ),
-                onTap: () {
-                  Navigator.pushNamed(context, '/animation');
-                },
-              ),
-              ListTile(
-                title: const Text(
-                  'Animated Cross Fade',
-                  style: TextStyle(color: Colors.blue),
-                ),
-                onTap: () {
-                  Navigator.pushNamed(context, '/animated_cross_fade');
-                },
-              ),
-              ListTile(
-                title: const Text(
-                  'Animated Container',
-                  style: TextStyle(color: Colors.blue),
-                ),
-                onTap: () {
-                  Navigator.pushNamed(context, '/animated_container');
-                },
-              ),
-              ListTile(
-                title: const Text(
-                  'Animated Builder',
-                  style: TextStyle(color: Colors.blue),
-                ),
-                onTap: () {
-                  Navigator.pushNamed(context, '/animated_builder');
-                },
-              ),
-              ListTile(
-                title: const Text(
-                  'Animated Widget',
-                  style: TextStyle(color: Colors.blue),
-                ),
-                onTap: () {
-                  Navigator.pushNamed(context, '/animated_widget');
-                },
-              ),
-              ListTile(
-                title: const Text(
-                  'Shared Preferences',
-                  style: TextStyle(color: Colors.blue),
-                ),
-                onTap: () {
-                  Navigator.pushNamed(context, '/shared_preferences');
-                },
-              ),
+              _buildListTile(
+                  context, 'Reorderable List View', '/reorderable_list'),
+              _buildListTile(context, 'Image Page', '/image'),
+              _buildListTile(context, 'Inherited Widget', '/inherited_widget'),
+              _buildListTile(context, 'Animation', '/animation'),
+              _buildListTile(
+                  context, 'Animated Cross Fade', '/animated_cross_fade'),
+              _buildListTile(
+                  context, 'Animated Container', '/animated_container'),
+              _buildListTile(context, 'Animated Builder', '/animated_builder'),
+              _buildListTile(context, 'Animated Widget', '/animated_widget'),
+              _buildListTile(
+                  context, 'Shared Preferences', '/shared_preferences'),
               ListTile(
                 title: const Text(
                   'Future Builder',
