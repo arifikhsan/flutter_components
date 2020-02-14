@@ -1,6 +1,10 @@
 import 'package:flutter/material.dart';
 
 class HomePage extends StatelessWidget {
+  // final List<Map<String, dynamic>> routes = [
+  //   {'Navigation Drawer': '/navigatoin_drawer'}
+  // ];
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -11,37 +15,15 @@ class HomePage extends StatelessWidget {
       body: Container(
         margin: const EdgeInsets.only(top: 8),
         child: Center(
+          // child: _buildListTiles(),
           child: ListView(
             children: <Widget>[
+              _buildListTile(context, 'Page Selector', '/page_selector'),
               _buildListTile(
                   context, 'Navigation Drawer', '/navigation_drawer'),
-              ListTile(
-                title: const Text(
-                  'Provider',
-                  style: TextStyle(color: Colors.blue),
-                ),
-                onTap: () {
-                  Navigator.pushNamed(context, '/provider');
-                },
-              ),
-              ListTile(
-                title: const Text(
-                  'Hive',
-                  style: TextStyle(color: Colors.blue),
-                ),
-                onTap: () {
-                  Navigator.pushNamed(context, '/hive');
-                },
-              ),
-              ListTile(
-                title: const Text(
-                  'ExpansionTile',
-                  style: TextStyle(color: Colors.blue),
-                ),
-                onTap: () {
-                  Navigator.pushNamed(context, '/expansion_tile');
-                },
-              ),
+              _buildListTile(context, 'Provider', '/provider'),
+              _buildListTile(context, 'Hive', '/hive'),
+              _buildListTile(context, 'Expansion Tile', '/expansion_tile'),
               ListTile(
                 title: const Text(
                   'Reorderable List View',
@@ -505,4 +487,22 @@ class HomePage extends StatelessWidget {
       },
     );
   }
+
+  // ListView _buildListTiles(BuildContext context) {
+  //   return ListView.builder(
+  //     itemCount: routes.length,
+  //     itemBuilder: (BuildContext context, int index) {
+  //       final Map<String, String> route = routes.elementAt(index) as Map<String, String>;
+  //       return ListTile(
+  //         title: Text(
+  //           route. ,
+  //           style: TextStyle(color: Colors.blue),
+  //         ),
+  //         onTap: () {
+  //           Navigator.pushNamed(context, route);
+  //         },
+  //       );
+  //     },
+  //   );
+  // }
 }
