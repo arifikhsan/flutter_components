@@ -19,6 +19,7 @@ import 'package:flutter_components/pages/lists/reorderable_list_page.dart';
 import 'package:flutter_components/pages/network/chopper_page.dart';
 import 'package:flutter_components/pages/persistents/hive_page.dart';
 import 'package:flutter_components/pages/persistents/shared_preferences_page.dart';
+import 'package:flutter_components/pages/plugins/device_info_page.dart';
 import 'package:flutter_components/pages/state/counter_page.dart';
 import 'package:flutter_components/pages/state/inherited_widget_page.dart';
 import 'package:flutter_components/pages/state/provider_page.dart';
@@ -130,4 +131,7 @@ final Map<String, WidgetBuilder> routes = <String, WidgetBuilder>{
   // * Shared Preferences
   '/shared_preferences': (BuildContext context) => SharedPreferencesPage(),
   '/hive': (BuildContext context) => HivePage(),
+
+  // * Plugins
+  '/device_info': (BuildContext context) => DeviceInfoPage(),
 };
