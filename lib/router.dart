@@ -11,6 +11,7 @@ import 'package:flutter_components/pages/layouts/navigation_drawer_page.dart';
 import 'package:flutter_components/pages/layouts/page_selector_page.dart';
 import 'package:flutter_components/pages/layouts/sliver_appbar_page.dart';
 import 'package:flutter_components/pages/layouts/tabbar_page.dart';
+import 'package:flutter_components/pages/lists/expansion_panel_page.dart';
 import 'package:flutter_components/pages/lists/expansion_tile_page.dart';
 import 'package:flutter_components/pages/lists/grid_list_page.dart';
 import 'package:flutter_components/pages/lists/list_tile_page.dart';
@@ -111,6 +112,7 @@ final Map<String, WidgetBuilder> routes = <String, WidgetBuilder>{
   '/grid_list': (BuildContext context) => GridListPage(),
   '/reorderable_list': (BuildContext context) => ReorderableListPage(),
   '/expansion_tile': (BuildContext context) => ExpansionTilePage(),
+  '/expansion_panel': (BuildContext context) => ExpansionPanelPage(),
 
   // * State Management
   '/bloc': (BuildContext context) => CounterPage(),
