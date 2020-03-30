@@ -18,6 +18,7 @@ jobs:
   release:
     name: Release
     runs-on: macos-latest
+    needs: build
     steps:
       - name: Create GitHub release
         uses: Roang-zero1/github-upload-release-artifacts-action@master
