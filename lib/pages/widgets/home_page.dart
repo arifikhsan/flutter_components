@@ -11,7 +11,6 @@ class HomePage extends StatelessWidget {
       body: Container(
         margin: const EdgeInsets.only(top: 8),
         child: Center(
-          // child: _buildListTiles(),
           child: ListView(
             children: <Widget>[
               _buildListTile(context, 'Expansion Panel', '/expansion_panel'),
@@ -36,366 +35,52 @@ class HomePage extends StatelessWidget {
               _buildListTile(context, 'Animated Widget', '/animated_widget'),
               _buildListTile(
                   context, 'Shared Preferences', '/shared_preferences'),
-              ListTile(
-                title: const Text(
-                  'Future Builder',
-                  style: TextStyle(color: Colors.blue),
-                ),
-                onTap: () {
-                  Navigator.pushNamed(context, '/future_builder');
-                },
-              ),
-              ListTile(
-                title: const Text(
-                  'Chopper',
-                  style: TextStyle(color: Colors.blue),
-                ),
-                onTap: () {
-                  Navigator.pushNamed(context, '/chopper');
-                },
-              ),
-              ListTile(
-                title: const Text(
-                  'Dialog',
-                  style: TextStyle(color: Colors.blue),
-                ),
-                onTap: () {
-                  Navigator.pushNamed(context, '/dialog');
-                },
-              ),
-              ListTile(
-                title: const Text(
-                  'Flushbar',
-                  style: TextStyle(color: Colors.blue),
-                ),
-                onTap: () {
-                  Navigator.pushNamed(context, '/flushbar');
-                },
-              ),
-              ListTile(
-                title: const Text(
-                  'Snackbar',
-                  style: TextStyle(color: Colors.blue),
-                ),
-                onTap: () {
-                  Navigator.pushNamed(context, '/snackbar');
-                },
-              ),
-              ListTile(
-                title: const Text(
-                  'Bottom Tabbar',
-                  style: TextStyle(color: Colors.blue),
-                ),
-                onTap: () {
-                  Navigator.pushNamed(context, '/bottom_tabbar');
-                },
-              ),
-              ListTile(
-                title: const Text(
-                  'Tabbar',
-                  style: TextStyle(color: Colors.blue),
-                ),
-                onTap: () {
-                  Navigator.pushNamed(context, '/tabbar');
-                },
-              ),
-              ListTile(
-                title: const Text(
-                  'Opacity Animations',
-                  style: TextStyle(color: Colors.blue),
-                ),
-                onTap: () {
-                  Navigator.pushNamed(context, '/opacity_animation');
-                },
-              ),
-              ListTile(
-                title: const Text(
-                  'Counter Bloc',
-                  style: TextStyle(color: Colors.blue),
-                ),
-                onTap: () {
-                  Navigator.pushNamed(context, '/bloc');
-                },
-              ),
-              ListTile(
-                title: const Text(
-                  'Sliver Appbar',
-                  style: TextStyle(color: Colors.blue),
-                ),
-                onTap: () {
-                  Navigator.pushNamed(context, '/sliver_appbar');
-                },
-              ),
-              ListTile(
-                title: const Text(
-                  'Appbar',
-                  style: TextStyle(color: Colors.blue),
-                ),
-                onTap: () {
-                  Navigator.pushNamed(context, '/appbar');
-                },
-              ),
-              ListTile(
-                title: const Text(
-                  'Sizedbox',
-                  style: TextStyle(color: Colors.blue),
-                ),
-                onTap: () {
-                  Navigator.pushNamed(context, '/sizedbox');
-                },
-              ),
-              ListTile(
-                title: const Text(
-                  'Clip',
-                  style: TextStyle(color: Colors.blue),
-                ),
-                onTap: () {
-                  Navigator.pushNamed(context, '/clip');
-                },
-              ),
-              ListTile(
-                title: const Text(
-                  'List View Builder Two',
-                  style: TextStyle(color: Colors.blue),
-                ),
-                onTap: () {
-                  Navigator.pushNamed(context, '/list_view_two');
-                },
-              ),
-              ListTile(
-                title: const Text(
-                  'List Tile',
-                  style: TextStyle(color: Colors.blue),
-                ),
-                onTap: () {
-                  Navigator.pushNamed(context, '/list_tile');
-                },
-              ),
-              ListTile(
-                title: const Text(
-                  'Grid List',
-                  style: TextStyle(color: Colors.blue),
-                ),
-                onTap: () {
-                  Navigator.pushNamed(context, '/grid_list');
-                },
-              ),
-              ListTile(
-                title: const Text(
-                  'Stack',
-                  style: TextStyle(color: Colors.blue),
-                ),
-                onTap: () {
-                  Navigator.pushNamed(context, '/stack');
-                },
-              ),
-              ListTile(
-                title: const Text(
-                  'Flexible',
-                  style: TextStyle(color: Colors.blue),
-                ),
-                onTap: () {
-                  Navigator.pushNamed(context, '/flexible');
-                },
-              ),
-              ListTile(
-                title: const Text(
-                  'Tooltip',
-                  style: TextStyle(color: Colors.blue),
-                ),
-                onTap: () {
-                  Navigator.pushNamed(context, '/tooltip');
-                },
-              ),
-              ListTile(
-                title: const Text(
-                  'Floating Action Button',
-                  style: TextStyle(color: Colors.blue),
-                ),
-                onTap: () {
-                  Navigator.pushNamed(context, '/floating_action_button');
-                },
-              ),
-              ListTile(
-                title: const Text(
-                  'Safe Area',
-                  style: TextStyle(color: Colors.blue),
-                ),
-                onTap: () {
-                  Navigator.pushNamed(context, '/safe_area');
-                },
-              ),
-              ListTile(
-                title: const Text(
-                  'Unsafe Area',
-                  style: TextStyle(color: Colors.blue),
-                ),
-                onTap: () {
-                  Navigator.pushNamed(context, '/unsafe_area');
-                },
-              ),
-              ListTile(
-                title: const Text(
-                  'Hello World',
-                  style: TextStyle(color: Colors.blue),
-                ),
-                onTap: () {
-                  Navigator.pushNamed(context, '/hello_world');
-                },
-              ),
-              ListTile(
-                title: const Text(
-                  'Buttons',
-                  style: TextStyle(color: Colors.blue),
-                ),
-                onTap: () {
-                  Navigator.pushNamed(context, '/button');
-                },
-              ),
-              ListTile(
-                title: const Text(
-                  'Icon',
-                  style: TextStyle(color: Colors.blue),
-                ),
-                onTap: () {
-                  Navigator.pushNamed(context, '/icon');
-                },
-              ),
-              ListTile(
-                title: const Text(
-                  'Icon Button',
-                  style: TextStyle(color: Colors.blue),
-                ),
-                onTap: () {
-                  Navigator.pushNamed(context, '/icon_button');
-                },
-              ),
-              ListTile(
-                title: const Text(
-                  'Simple Text',
-                  style: TextStyle(color: Colors.blue),
-                ),
-                onTap: () {
-                  Navigator.pushNamed(context, '/text');
-                },
-              ),
-              ListTile(
-                title: const Text(
-                  'Card',
-                  style: TextStyle(color: Colors.blue),
-                ),
-                onTap: () {
-                  Navigator.pushNamed(context, '/card');
-                },
-              ),
-              ListTile(
-                title: const Text(
-                  'Dropdown Button',
-                  style: TextStyle(color: Colors.blue),
-                ),
-                onTap: () {
-                  Navigator.pushNamed(context, '/dropdown_button');
-                },
-              ),
-              ListTile(
-                title: const Text(
-                  'Text field',
-                  style: TextStyle(color: Colors.blue),
-                ),
-                onTap: () {
-                  Navigator.pushNamed(context, '/text_field');
-                },
-              ),
-              ListTile(
-                title: const Text(
-                  'Stateful Widgets',
-                  style: TextStyle(color: Colors.blue),
-                ),
-                onTap: () {
-                  Navigator.pushNamed(context, '/stateful_widgets');
-                },
-              ),
-              ListTile(
-                title: const Text(
-                  'Stateless Widgets',
-                  style: TextStyle(color: Colors.blue),
-                ),
-                onTap: () {
-                  Navigator.pushNamed(context, '/stateless_widgets');
-                },
-              ),
-              ListTile(
-                title: const Text(
-                  'Form',
-                  style: TextStyle(color: Colors.blue),
-                ),
-                onTap: () {
-                  Navigator.pushNamed(context, '/form');
-                },
-              ),
-              ListTile(
-                title: const Text(
-                  'ListView Builder',
-                  style: TextStyle(color: Colors.blue),
-                ),
-                onTap: () {
-                  Navigator.pushNamed(context, '/list_view');
-                },
-              ),
-              ListTile(
-                title: const Text(
-                  'Placeholder',
-                  style: TextStyle(color: Colors.blue),
-                ),
-                onTap: () {
-                  Navigator.pushNamed(context, '/placeholder');
-                },
-              ),
-              ListTile(
-                title: const Text(
-                  'Align',
-                  style: TextStyle(color: Colors.blue),
-                ),
-                onTap: () {
-                  Navigator.pushNamed(context, '/align');
-                },
-              ),
-              ListTile(
-                title: const Text(
-                  'Spacer',
-                  style: TextStyle(color: Colors.blue),
-                ),
-                onTap: () {
-                  Navigator.pushNamed(context, '/spacer');
-                },
-              ),
-              ListTile(
-                title: const Text(
-                  'Container',
-                  style: TextStyle(color: Colors.blue),
-                ),
-                onTap: () {
-                  Navigator.pushNamed(context, '/container');
-                },
-              ),
-              ListTile(
-                title: const Text(
-                  'Wrap',
-                  style: TextStyle(color: Colors.blue),
-                ),
-                onTap: () {
-                  Navigator.pushNamed(context, '/wrap');
-                },
-              ),
-              ListTile(
-                title: const Text(
-                  'Chip',
-                  style: TextStyle(color: Colors.blue),
-                ),
-                onTap: () {
-                  Navigator.pushNamed(context, '/chip');
-                },
-              ),
+              _buildListTile(context, 'Future Builder', '/future_builder'),
+              _buildListTile(context, 'Chopper', '/chopper'),
+              _buildListTile(context, 'Dialog', '/dialog'),
+              _buildListTile(context, 'Flushbar', '/flushbar'),
+              _buildListTile(context, 'Snackbar', '/snackbar'),
+              _buildListTile(context, 'Bottom Tabbar', '/bottom_tabbar'),
+              _buildListTile(context, 'Tabbar', '/tabbar'),
+              _buildListTile(
+                  context, 'Opacity Animations', '/opacity_animation'),
+              _buildListTile(context, 'Counter Bloc', '/bloc'),
+              _buildListTile(context, 'Sliver Appbar', '/sliver_appbar'),
+              _buildListTile(context, 'Appbar', '/appbar'),
+              _buildListTile(context, 'Sizedbox', '/sizedbox'),
+              _buildListTile(context, 'Clip', '/clip'),
+              _buildListTile(
+                  context, 'List View Builder Two', '/list_view_two'),
+              _buildListTile(context, 'List Tile', '/list_tile'),
+              _buildListTile(context, 'Grid List', '/grid_list'),
+              _buildListTile(context, 'Stack', '/stack'),
+              _buildListTile(context, 'Flexible', '/flexible'),
+              _buildListTile(context, 'Tooltip', '/tooltip'),
+              _buildListTile(
+                  context, 'Floating Action Button', '/floating_action_button'),
+              _buildListTile(context, 'Safe Area', '/safe_area'),
+              _buildListTile(context, 'Tooltip', '/tooltip'),
+              _buildListTile(context, 'Unsafe Area', '/unsafe_area'),
+              _buildListTile(context, 'Hello World', '/hello_world'),
+              _buildListTile(context, 'Buttons', '/button'),
+              _buildListTile(context, 'Icon', '/icon'),
+              _buildListTile(context, 'Icon Button', '/icon_button'),
+              _buildListTile(context, 'Simple Text', '/text'),
+              _buildListTile(context, 'Card', '/card'),
+              _buildListTile(context, 'Dropdown Button', '/dropdown_button'),
+              _buildListTile(context, 'Text field', '/text_field'),
+              _buildListTile(context, 'Stateful Widgets', '/stateful_widgets'),
+              _buildListTile(
+                  context, 'Stateless Widgets', '/stateless_widgets'),
+              _buildListTile(context, 'Form', '/form'),
+              _buildListTile(context, 'ListView Builder', '/list_view'),
+              _buildListTile(context, 'Placeholder', '/placeholder'),
+              _buildListTile(context, 'Align', '/align'),
+              _buildListTile(context, 'Spacer', '/spacer'),
+              _buildListTile(context, 'Container', '/container'),
+              _buildListTile(context, 'Wrap', '/wrap'),
+              _buildListTile(context, 'Chip', '/chip'),
+              _buildListTile(context, 'Spacer', '/spacer'),
               _buildListTile(
                   context, 'Page View Horizontal', '/page_view_horizontal'),
               _buildListTile(
@@ -418,22 +103,4 @@ class HomePage extends StatelessWidget {
       },
     );
   }
-
-  // ListView _buildListTiles(BuildContext context) {
-  //   return ListView.builder(
-  //     itemCount: routes.length,
-  //     itemBuilder: (BuildContext context, int index) {
-  //       final Map<String, String> route = routes.elementAt(index) as Map<String, String>;
-  //       return ListTile(
-  //         title: Text(
-  //           route. ,
-  //           style: TextStyle(color: Colors.blue),
-  //         ),
-  //         onTap: () {
-  //           Navigator.pushNamed(context, route);
-  //         },
-  //       );
-  //     },
-  //   );
-  // }
 }
