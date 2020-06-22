@@ -11,7 +11,6 @@ jobs:
           java-version: "12.x"
       - uses: subosito/flutter-action@v1
         with:
-          flutter-version: "1.12.13+hotfix.8"
           channel: "stable"
       - run: flutter pub get
       - run: flutter build apk --release
@@ -21,6 +20,7 @@ jobs:
     needs: build
     steps:
       - name: Create a Release APK
-        uses: ncipollo/release-action@v1
+      - uses: actions/upload-artifact@v1
         with:
-          artifacts: "build/app/outputs/apk/release/*.apk"
+          name: app-release
+          path: build/app/outputs/apk/release/app-release.apk
