@@ -28,6 +28,7 @@ import 'package:flutter_components/pages/widgets/bottom_sheet_page.dart';
 import 'package:flutter_components/pages/widgets/button_page.dart';
 import 'package:flutter_components/pages/widgets/card_page.dart';
 import 'package:flutter_components/pages/widgets/clip_page.dart';
+import 'package:flutter_components/pages/widgets/custom_painter_page.dart';
 import 'package:flutter_components/pages/widgets/dialog_page.dart';
 import 'package:flutter_components/pages/widgets/dropdown_button_page.dart';
 import 'package:flutter_components/pages/widgets/flexible_page.dart';
@@ -92,6 +93,7 @@ final Map<String, WidgetBuilder> routes = <String, WidgetBuilder>{
   '/future_builder': (BuildContext context) => FutureBuilderPage(),
   '/image': (BuildContext context) => ImagePage(),
   '/bottom_sheet': (BuildContext context) => BottomSheetPage(),
+  '/custom_painter': (BuildContext context) => CustomPainterPage(),
 
   // * Layouts
   '/page_view_horizontal': (BuildContext context) => PageViewHorizontalPage(),

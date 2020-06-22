@@ -13,6 +13,7 @@ class HomePage extends StatelessWidget {
         child: Center(
           child: ListView(
             children: <Widget>[
+              _buildListTile(context, 'Custom Painter', '/custom_painter'),
               _buildListTile(context, 'Expansion Panel', '/expansion_panel'),
               _buildListTile(context, 'Device Info', '/device_info'),
               _buildListTile(context, 'Bottom Sheet', '/bottom_sheet'),
