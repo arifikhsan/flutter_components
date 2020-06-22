@@ -19,32 +19,35 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-  fluttertoast: ^3.1.3
-  flutter_bloc: ^3.2.0
-  flushbar: ^1.9.1
-  chopper: ^3.0.1+1
-  provider: ^4.0.3
-  shared_preferences: ^0.5.6+1
+  fluttertoast: ^4.0.1
+  flutter_bloc: ^4.0.1
+  flushbar: ^1.10.4
+  chopper: ^3.0.3
+  provider: ^4.1.3
+  shared_preferences: ^0.5.7+3
   sum_types: ^0.2.1+2
-  hive: ^1.4.0+1
-  hive_flutter: ^0.3.0+1
+  hive: ^1.4.1+1
+  hive_flutter: ^0.3.0+2
   # for os specific directory paths
-  path_provider: ^1.6.0
-  device_info: ^0.4.1+4
-
+  path_provider: ^1.6.10
+  device_info: ^0.4.2+4
+  dartx: ^0.4.2
   # The following adds the Cupertino Icons font to your application.
   # Use with the CupertinoIcons class for iOS style icons.
-  cupertino_icons: ^0.1.2
+  cupertino_icons: ^0.1.3
 
 dev_dependencies:
   flutter_test:
     sdk: flutter
-  build_runner:
-  hive_generator: ^0.7.0
-  chopper_generator: ^3.0.3
-  lint: ^1.1.1
+  build_runner: any
+  hive_generator: ^0.7.0+2
+  chopper_generator: ^3.0.5
+  lint: ^1.2.0
   sum_types_generator: ^0.2.1+2
 
+dependency_overrides:
+  dartx: ^0.3.0
+  
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec
 
