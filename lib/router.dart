@@ -60,6 +60,7 @@ import 'package:flutter_components/pages/widgets/spacer_page.dart';
 import 'package:flutter_components/pages/widgets/tooltip_page.dart';
 import 'package:flutter_components/pages/layouts/unsafe_area_page.dart';
 import 'package:flutter_components/pages/widgets/wrap_page.dart';
+import 'package:flutter_components/pages/widgets/draggable_page.dart';
 
 final Map<String, WidgetBuilder> routes = <String, WidgetBuilder>{
   '/': (BuildContext context) => HomePage(),
@@ -94,6 +95,7 @@ final Map<String, WidgetBuilder> routes = <String, WidgetBuilder>{
   '/image': (BuildContext context) => ImagePage(),
   '/bottom_sheet': (BuildContext context) => BottomSheetPage(),
   '/custom_painter': (BuildContext context) => CustomPainterPage(),
+  '/draggable': (BuildContext context) => DraggablePage(),
 
   // * Layouts
   '/page_view_horizontal': (BuildContext context) => PageViewHorizontalPage(),
